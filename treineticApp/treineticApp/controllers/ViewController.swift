@@ -14,17 +14,22 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     @IBOutlet weak var toDoTableView: UITableView!
     
     var data:[String] = []
+    var doneData: [String] = []
     var selectedRow:Int = -1
+    
     let defaults = UserDefaults.standard
-   
+    let doneDefault = UserDefaults.standard
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         print(data)
        
         let newTodo = defaults.stringArray(forKey: "toDoKey") ?? [String]()
         self.data = newTodo
+        
         // Do any additional setup after loading the view.
     }
+    
     @IBAction func addToDo(_ sender: Any) {
         if toDoTableView.isEditing {
             return
@@ -49,6 +54,21 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
 //
         return cell
 
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        let doneTask = self.data[indexPath.row]
+        self.doneData.append(doneTask)
+        doneDefault.set(doneData, forKey: "doneKey")
+        doneDefault.synchronize()
+        
+        self.data.remove(at: indexPath.row)
+        self.defaults.set(data, forKey: "toDoKey")
+        tableView.reloadData()
+        
+        
+        
     }
     
 
