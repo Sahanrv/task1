@@ -3,12 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		12A2ACBA3A809C7DAE064DEE /* Pods_treineticAppUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AFEA887D6A567704757FA8C1 /* Pods_treineticAppUITests.framework */; };
 		6E4C6BAAD05A8DB3D556089D /* Pods_treineticApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 363970E41407471D34EB80BE /* Pods_treineticApp.framework */; };
+		7B593F9922DF1FD4005DDF77 /* todo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B593F9822DF1FD4005DDF77 /* todo.swift */; };
+		7B593F9B22DF21C0005DDF77 /* AddToDoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B593F9A22DF21C0005DDF77 /* AddToDoViewController.swift */; };
+		7B593F9E22DF2A8D005DDF77 /* todoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B593F9D22DF2A8D005DDF77 /* todoViewCell.swift */; };
 		7B6B95FC22DF13F100BC8200 /* Done.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6B95FB22DF13F100BC8200 /* Done.storyboard */; };
 		7B6B960222DF196900BC8200 /* DoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B960122DF196900BC8200 /* DoneController.swift */; };
 		7B9F729B22DEFB8F00069905 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F729A22DEFB8F00069905 /* AppDelegate.swift */; };
@@ -42,6 +45,9 @@
 		19A5F0616626AA8C9EE903AE /* Pods-treineticAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treineticAppTests.release.xcconfig"; path = "Target Support Files/Pods-treineticAppTests/Pods-treineticAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		363970E41407471D34EB80BE /* Pods_treineticApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_treineticApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		64AA8AE8026BE7B24D6877E6 /* Pods-treineticApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-treineticApp.debug.xcconfig"; path = "Target Support Files/Pods-treineticApp/Pods-treineticApp.debug.xcconfig"; sourceTree = "<group>"; };
+		7B593F9822DF1FD4005DDF77 /* todo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todo.swift; sourceTree = "<group>"; };
+		7B593F9A22DF21C0005DDF77 /* AddToDoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddToDoViewController.swift; sourceTree = "<group>"; };
+		7B593F9D22DF2A8D005DDF77 /* todoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoViewCell.swift; sourceTree = "<group>"; };
 		7B6B95FB22DF13F100BC8200 /* Done.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Done.storyboard; sourceTree = "<group>"; };
 		7B6B960122DF196900BC8200 /* DoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneController.swift; sourceTree = "<group>"; };
 		7B9F729722DEFB8F00069905 /* treineticApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = treineticApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,8 +119,14 @@
 				C27F90F53E753AF43B178ADB /* Pods-treineticAppUITests.debug.xcconfig */,
 				B3E511A29F200FC228A9F351 /* Pods-treineticAppUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		7B593F9C22DF29A8005DDF77 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 		7B6B95FD22DF13FF00BC8200 /* storyboards */ = {
@@ -131,6 +143,7 @@
 			children = (
 				7B9F729C22DEFB8F00069905 /* ViewController.swift */,
 				7B6B960122DF196900BC8200 /* DoneController.swift */,
+				7B593F9A22DF21C0005DDF77 /* AddToDoViewController.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -138,6 +151,7 @@
 		7B6B960022DF143100BC8200 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				7B593F9822DF1FD4005DDF77 /* todo.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -167,6 +181,7 @@
 		7B9F729922DEFB8F00069905 /* treineticApp */ = {
 			isa = PBXGroup;
 			children = (
+				7B593F9C22DF29A8005DDF77 /* New Group */,
 				7B6B960022DF143100BC8200 /* models */,
 				7B6B95FF22DF141E00BC8200 /* controllers */,
 				7B6B95FD22DF13FF00BC8200 /* storyboards */,
@@ -174,6 +189,7 @@
 				7B9F72A122DEFB9100069905 /* Assets.xcassets */,
 				7B9F72A322DEFB9100069905 /* LaunchScreen.storyboard */,
 				7B9F72A622DEFB9100069905 /* Info.plist */,
+				7B593F9D22DF2A8D005DDF77 /* todoViewCell.swift */,
 			);
 			path = treineticApp;
 			sourceTree = "<group>";
@@ -420,7 +436,10 @@
 			files = (
 				7B9F729D22DEFB8F00069905 /* ViewController.swift in Sources */,
 				7B6B960222DF196900BC8200 /* DoneController.swift in Sources */,
+				7B593F9B22DF21C0005DDF77 /* AddToDoViewController.swift in Sources */,
 				7B9F729B22DEFB8F00069905 /* AppDelegate.swift in Sources */,
+				7B593F9E22DF2A8D005DDF77 /* todoViewCell.swift in Sources */,
+				7B593F9922DF1FD4005DDF77 /* todo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
