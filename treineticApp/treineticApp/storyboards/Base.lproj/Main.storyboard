@@ -76,33 +76,33 @@
                                                             <nil key="textColor"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
-                                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1M-Ji-vNe" customClass="UICheckbox" customModule="UICheckbox_Swift">
-                                                            <rect key="frame" x="355" y="14" width="44" height="44"/>
-                                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ByQ-sL-Te3" customClass="UICheckbox" customModule="UICheckbox_Swift">
+                                                            <rect key="frame" x="343" y="20" width="31" height="30"/>
                                                             <constraints>
-                                                                <constraint firstAttribute="width" constant="44" id="RbV-lC-Sec"/>
-                                                                <constraint firstAttribute="height" constant="44" id="RsG-As-fS6"/>
+                                                                <constraint firstAttribute="height" constant="30" id="6Pc-eY-HQY"/>
+                                                                <constraint firstAttribute="width" constant="31" id="IVa-Nf-XWx"/>
                                                             </constraints>
+                                                            <state key="normal" title="Button"/>
                                                             <userDefinedRuntimeAttributes>
                                                                 <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                                     <color key="value" red="0.065341919949999994" green="0.81464540159999999" blue="0.27238978949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                                 </userDefinedRuntimeAttribute>
                                                                 <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                                                    <real key="value" value="5"/>
+                                                                    <real key="value" value="4"/>
                                                                 </userDefinedRuntimeAttribute>
                                                             </userDefinedRuntimeAttributes>
                                                             <connections>
-                                                                <action selector="checkBox:" destination="tgX-aC-8DA" eventType="valueChanged" id="qsE-48-aMV"/>
+                                                                <action selector="checkButtonAction:" destination="tgX-aC-8DA" eventType="touchUpInside" id="iSC-XK-qzY"/>
                                                             </connections>
-                                                        </view>
+                                                        </button>
                                                     </subviews>
                                                     <constraints>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="ByQ-sL-Te3" secondAttribute="bottom" constant="11" id="3Oi-xX-GU0"/>
                                                         <constraint firstItem="m4O-lq-CeX" firstAttribute="top" secondItem="lbd-8j-h1t" secondAttribute="topMargin" constant="8" id="Fgc-Lk-wnX"/>
-                                                        <constraint firstAttribute="bottom" secondItem="D1M-Ji-vNe" secondAttribute="bottom" constant="13.67" id="SP8-wV-3rk"/>
-                                                        <constraint firstAttribute="trailing" secondItem="D1M-Ji-vNe" secondAttribute="trailing" constant="15" id="Sel-sp-l6t"/>
+                                                        <constraint firstItem="ByQ-sL-Te3" firstAttribute="top" secondItem="lbd-8j-h1t" secondAttribute="topMargin" constant="9" id="QeJ-bn-S5P"/>
                                                         <constraint firstItem="m4O-lq-CeX" firstAttribute="bottom" secondItem="lbd-8j-h1t" secondAttribute="bottomMargin" constant="8" id="Y7A-b9-sO0"/>
                                                         <constraint firstItem="m4O-lq-CeX" firstAttribute="leading" secondItem="lbd-8j-h1t" secondAttribute="leadingMargin" constant="8" id="iqD-my-DGD"/>
-                                                        <constraint firstItem="D1M-Ji-vNe" firstAttribute="top" secondItem="lbd-8j-h1t" secondAttribute="top" constant="14" id="ksa-Rd-6IN"/>
+                                                        <constraint firstAttribute="trailingMargin" secondItem="ByQ-sL-Te3" secondAttribute="trailing" constant="20" id="xiA-9x-Ipw"/>
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
@@ -188,7 +188,7 @@
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="IBC-Dd-VSy">
                                         <rect key="frame" x="8" y="44" width="398" height="67"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="398" id="E4z-Cc-8rY"/>
                                             <constraint firstAttribute="height" constant="67" id="voD-AM-BXj"/>
@@ -234,11 +234,12 @@
                     <connections>
                         <outlet property="addToDo" destination="ZKO-q2-yXU" id="sY8-rC-DsY"/>
                         <outlet property="todoTextView" destination="IBC-Dd-VSy" id="Zif-Ec-JSY"/>
+                        <segue destination="BYZ-38-t0r" kind="showDetail" identifier="todoList" id="O3N-n3-z3c"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydm-bf-Gqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1128.985507246377" y="565.76086956521749"/>
+            <point key="canvasLocation" x="1200" y="140"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uES-zU-2Gy">
@@ -261,4 +262,7 @@
     <resources>
         <image name="add" width="170.66667175292969" height="170.66667175292969"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="O3N-n3-z3c"/>
+    </inferredMetricsTieBreakers>
 </document>

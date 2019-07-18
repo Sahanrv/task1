@@ -14,6 +14,8 @@
 		7B593F9E22DF2A8D005DDF77 /* todoViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B593F9D22DF2A8D005DDF77 /* todoViewCell.swift */; };
 		7B6B95FC22DF13F100BC8200 /* Done.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B6B95FB22DF13F100BC8200 /* Done.storyboard */; };
 		7B6B960222DF196900BC8200 /* DoneController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B6B960122DF196900BC8200 /* DoneController.swift */; };
+		7B8DAC2422E01A7A00861386 /* doneViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DAC2322E01A7A00861386 /* doneViewCell.swift */; };
+		7B8DAC2622E032B200861386 /* CheckBoxClick.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B8DAC2522E032B200861386 /* CheckBoxClick.swift */; };
 		7B9F729B22DEFB8F00069905 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F729A22DEFB8F00069905 /* AppDelegate.swift */; };
 		7B9F729D22DEFB8F00069905 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9F729C22DEFB8F00069905 /* ViewController.swift */; };
 		7B9F72A022DEFB8F00069905 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B9F729E22DEFB8F00069905 /* Main.storyboard */; };
@@ -50,6 +52,8 @@
 		7B593F9D22DF2A8D005DDF77 /* todoViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = todoViewCell.swift; sourceTree = "<group>"; };
 		7B6B95FB22DF13F100BC8200 /* Done.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Done.storyboard; sourceTree = "<group>"; };
 		7B6B960122DF196900BC8200 /* DoneController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DoneController.swift; sourceTree = "<group>"; };
+		7B8DAC2322E01A7A00861386 /* doneViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = doneViewCell.swift; sourceTree = "<group>"; };
+		7B8DAC2522E032B200861386 /* CheckBoxClick.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckBoxClick.swift; sourceTree = "<group>"; };
 		7B9F729722DEFB8F00069905 /* treineticApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = treineticApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B9F729A22DEFB8F00069905 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B9F729C22DEFB8F00069905 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +148,9 @@
 				7B9F729C22DEFB8F00069905 /* ViewController.swift */,
 				7B6B960122DF196900BC8200 /* DoneController.swift */,
 				7B593F9A22DF21C0005DDF77 /* AddToDoViewController.swift */,
+				7B593F9D22DF2A8D005DDF77 /* todoViewCell.swift */,
+				7B8DAC2322E01A7A00861386 /* doneViewCell.swift */,
+				7B8DAC2522E032B200861386 /* CheckBoxClick.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -189,7 +196,6 @@
 				7B9F72A122DEFB9100069905 /* Assets.xcassets */,
 				7B9F72A322DEFB9100069905 /* LaunchScreen.storyboard */,
 				7B9F72A622DEFB9100069905 /* Info.plist */,
-				7B593F9D22DF2A8D005DDF77 /* todoViewCell.swift */,
 			);
 			path = treineticApp;
 			sourceTree = "<group>";
@@ -435,7 +441,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B9F729D22DEFB8F00069905 /* ViewController.swift in Sources */,
+				7B8DAC2422E01A7A00861386 /* doneViewCell.swift in Sources */,
 				7B6B960222DF196900BC8200 /* DoneController.swift in Sources */,
+				7B8DAC2622E032B200861386 /* CheckBoxClick.swift in Sources */,
 				7B593F9B22DF21C0005DDF77 /* AddToDoViewController.swift in Sources */,
 				7B9F729B22DEFB8F00069905 /* AppDelegate.swift in Sources */,
 				7B593F9E22DF2A8D005DDF77 /* todoViewCell.swift in Sources */,

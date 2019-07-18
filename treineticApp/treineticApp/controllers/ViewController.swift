@@ -27,6 +27,8 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         let newTodo = defaults.stringArray(forKey: "toDoKey") ?? [String]()
         self.data = newTodo
         
+        toDoTableView.reloadData()
+        
         // Do any additional setup after loading the view.
     }
     
@@ -51,6 +53,9 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
        
          let cell = tableView.dequeueReusableCell(withIdentifier: "todoViewCell", for: indexPath) as! todoViewCell
         cell.todoLabel.text = data[indexPath.row]
+        cell.index = indexPath.item
+        cell.rowCheckDelegate = self
+        
 //
         return cell
 
@@ -58,20 +63,33 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        let doneTask = self.data[indexPath.row]
-        self.doneData.append(doneTask)
-        doneDefault.set(doneData, forKey: "doneKey")
-        doneDefault.synchronize()
-        
-        self.data.remove(at: indexPath.row)
-        self.defaults.set(data, forKey: "toDoKey")
-        tableView.reloadData()
+       
         
         
         
     }
     
+    
 
 
+}
+
+extension ViewController: CheckRowDelegate {
+    func didTapCheckBox(checked: Bool, index: Int) {
+        if checked == true {
+            print("Index Is : \(index)")
+            
+            let doneTask = self.data[index]
+            self.doneData.append(doneTask)
+            doneDefault.set(doneData, forKey: "doneKey")
+            doneDefault.synchronize()
+            
+            self.data.remove(at: index)
+            self.defaults.set(data, forKey: "toDoKey")
+            toDoTableView.reloadData()
+        }
+    }
+    
+    
 }
 

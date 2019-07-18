@@ -35,7 +35,7 @@ class AddToDoViewController: UIViewController {
         defaults.set(self.todo, forKey: "toDoKey")
         defaults.synchronize()
         
-        self.dismiss(animated: true, completion: nil)
+        self.performSegue(withIdentifier: "todoList", sender: nil)
     }
     
     /*
