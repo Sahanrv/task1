@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import UICheckbox_Swift
 
 protocol CheckRowDelegate {
     func didTapCheckBox(checked: Bool, index :Int)
@@ -18,6 +19,7 @@ class todoViewCell: UITableViewCell {
     var rowCheckDelegate: CheckRowDelegate!
     
     @IBOutlet weak var todoLabel: UILabel!
+    @IBOutlet weak var checkBox: UICheckbox!
     
     override func awakeFromNib() {
         super.awakeFromNib()

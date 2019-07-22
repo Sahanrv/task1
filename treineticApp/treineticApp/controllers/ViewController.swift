@@ -55,6 +55,7 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         cell.todoLabel.text = data[indexPath.row]
         cell.index = indexPath.item
         cell.rowCheckDelegate = self
+        cell.checkBox.isSelected = false
         
 //
         return cell

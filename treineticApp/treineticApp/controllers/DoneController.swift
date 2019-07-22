@@ -54,27 +54,41 @@ extension DoneController : UITableViewDelegate, UITableViewDataSource {
         
         cell.donTasksLabel.text = doneList[indexPath.row]
         
+        cell.index = indexPath.item
+        cell.rowCheckDelegate = self as? checkedToDoDelegate
+        cell.checkBox.isSelected = false
+        
         return cell
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
-        //Get record for todo
-        let todo = doneList[indexPath.row]
-        self.todoList = todoData.stringArray(forKey: "toDoKey") ?? [String]()
-        todoList.append(todo)
-        todoData.set(todoList, forKey: "toDoKey")
-        
-        //Remove record from done
-        doneList.remove(at: indexPath.row)
-        todoData.set(doneList, forKey: "doneKey")
-        todoData.synchronize()
-        
-        tableView.reloadData()
+      
         
         
     }
     
     
 }
+
+extension DoneController: checkedToDoDelegate {
+    func didTapCheckBox(checked: Bool, index: Int) {
+        //Get record for todo
+        let todo = doneList[index]
+        self.todoList = todoData.stringArray(forKey: "toDoKey") ?? [String]()
+        todoList.append(todo)
+        todoData.set(todoList, forKey: "toDoKey")
+        
+        //Remove record from done
+        doneList.remove(at: index)
+        todoData.set(doneList, forKey: "doneKey")
+        todoData.synchronize()
+        
+        tabelView.reloadData()
+    }
+    
+    
+}
+
+
 

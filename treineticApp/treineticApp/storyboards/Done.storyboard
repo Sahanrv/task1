@@ -36,26 +36,41 @@
                                                         <constraint firstAttribute="height" constant="44" id="JJm-fB-kbh"/>
                                                         <constraint firstAttribute="width" constant="290" id="UXq-7h-QPY"/>
                                                     </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="00X-j3-bst">
-                                                    <rect key="frame" x="353" y="24" width="44" height="44"/>
-                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vso-SG-aEw" customClass="UICheckbox" customModule="UICheckbox_Swift">
+                                                    <rect key="frame" x="350" y="13" width="44" height="44"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="44" id="TyQ-IM-Ncc"/>
+                                                        <constraint firstAttribute="height" constant="44" id="2k4-4q-juq"/>
+                                                        <constraint firstAttribute="width" constant="44" id="Oph-qk-cGE"/>
                                                     </constraints>
-                                                </view>
+                                                    <state key="normal" title="Button"/>
+                                                    <userDefinedRuntimeAttributes>
+                                                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                            <color key="value" red="0.065341919949999994" green="0.81464540159999999" blue="0.27238978949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                        <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                            <real key="value" value="5"/>
+                                                        </userDefinedRuntimeAttribute>
+                                                    </userDefinedRuntimeAttributes>
+                                                    <connections>
+                                                        <action selector="checkedAdd:" destination="Ndw-6J-QrL" eventType="touchUpInside" id="2Ce-sJ-cES"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="00X-j3-bst" secondAttribute="trailing" constant="17" id="8hI-V8-5BX"/>
+                                                <constraint firstItem="Vso-SG-aEw" firstAttribute="top" secondItem="bal-dT-45d" secondAttribute="top" constant="13" id="BwQ-tM-Bbj"/>
+                                                <constraint firstAttribute="bottom" secondItem="Vso-SG-aEw" secondAttribute="bottom" constant="14" id="N1i-8t-gUG"/>
                                                 <constraint firstItem="V4k-3F-oij" firstAttribute="leading" secondItem="bal-dT-45d" secondAttribute="leadingMargin" id="c1w-dN-EyN"/>
                                                 <constraint firstItem="V4k-3F-oij" firstAttribute="bottom" secondItem="bal-dT-45d" secondAttribute="bottomMargin" id="gt2-J2-2cb"/>
+                                                <constraint firstAttribute="trailing" secondItem="Vso-SG-aEw" secondAttribute="trailing" constant="20" id="kPL-it-CKX"/>
                                                 <constraint firstItem="V4k-3F-oij" firstAttribute="top" secondItem="bal-dT-45d" secondAttribute="topMargin" id="prO-8y-aXO"/>
                                             </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="checkBox" destination="Vso-SG-aEw" id="F6g-z4-blW"/>
                                             <outlet property="donTasksLabel" destination="V4k-3F-oij" id="RCD-hI-YYV"/>
                                         </connections>
                                     </tableViewCell>

@@ -7,10 +7,20 @@
 //
 
 import UIKit
+import UICheckbox_Swift
+
+protocol checkedToDoDelegate {
+    func didTapCheckBox(checked: Bool, index :Int)
+}
 
 class doneViewCell: UITableViewCell {
 
     @IBOutlet weak var donTasksLabel: UILabel!
+    
+    var index: Int!
+    var rowCheckDelegate: checkedToDoDelegate!
+    
+    @IBOutlet weak var checkBox: UICheckbox!
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,5 +32,9 @@ class doneViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    @IBAction func checkedAdd(_ sender: Any) {
+        rowCheckDelegate.didTapCheckBox(checked: true, index: index)
+    }
+    
 }

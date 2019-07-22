@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -106,6 +107,7 @@
                                                     </constraints>
                                                 </tableViewCellContentView>
                                                 <connections>
+                                                    <outlet property="checkBox" destination="ByQ-sL-Te3" id="FZm-5g-qQh"/>
                                                     <outlet property="todoLabel" destination="m4O-lq-CeX" id="Gh3-Mg-hex"/>
                                                 </connections>
                                             </tableViewCell>
@@ -204,7 +206,7 @@
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                         <state key="normal" title="ADD">
-                                            <color key="titleColor" red="0.065341919949999994" green="0.81464540159999999" blue="0.27238978949999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <color key="titleColor" name="Primary"/>
                                         </state>
                                         <connections>
                                             <action selector="addToDo:" destination="f6j-Ly-M9v" eventType="touchUpInside" id="BLZ-pk-h9j"/>
@@ -239,7 +241,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ydm-bf-Gqr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1200" y="140"/>
+            <point key="canvasLocation" x="1119" y="572"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="uES-zU-2Gy">
@@ -261,6 +263,9 @@
     </scenes>
     <resources>
         <image name="add" width="170.66667175292969" height="170.66667175292969"/>
+        <namedColor name="Primary">
+            <color red="0.43399998545646667" green="0.0" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="O3N-n3-z3c"/>
