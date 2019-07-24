@@ -22,6 +22,9 @@ class Home_VC: UIViewController {
     @IBOutlet weak var number3: UILabel!
     
     var arra1 = [Int]()
+    var arra2 = [Int]()
+    var arra3 = [Int]()
+//   let collectionView =  UICollectionView()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -38,6 +41,10 @@ class Home_VC: UIViewController {
         for _ in 0...9 {
             let random1 = Int.random(in: 0..<9)
             self.arra1.append(random1)
+            let random2 = Int.random(in: 0..<9)
+            self.arra2.append(random2)
+            let random3 = Int.random(in: 0..<9)
+            self.arra3.append(random3)
         }
     }
     
@@ -46,11 +53,11 @@ class Home_VC: UIViewController {
         self.collectionView1.delegate = self
         self.collectionView1.dataSource = self
         
-//        self.collectionView2.delegate = self
-//        self.collectionView2.dataSource = self
-//
-//        self.collectionView3.delegate = self
-//        self.collectionView3.dataSource = self
+        self.collectionView2.delegate = self
+        self.collectionView2.dataSource = self
+
+        self.collectionView3.delegate = self
+        self.collectionView3.dataSource = self
     }
     
     func uiConfig(){
@@ -88,16 +95,46 @@ class Home_VC: UIViewController {
 extension Home_VC: UICollectionViewDelegate, UICollectionViewDataSource {
    
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return arra1.count
+        
+        if collectionView == collectionView1 {
+            return arra1.count
+        }else if collectionView == collectionView2 {
+            return arra2.count
+        }
+        
+        return arra3.count
+        
+        //return 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell: CollectionViewCell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell1", for: indexPath) as! CollectionViewCell1
         
-        let val1 = arra1[indexPath.row]
-        cell.label1.text = String(val1)
+        if collectionView == collectionView1{
+            let cell: CollectionViewCell1 = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell1", for: indexPath) as! CollectionViewCell1
+            
+            let val1 = arra1[indexPath.row]
+            cell.label1.text = String(val1)
+            
+            return cell
+            
+        } else if collectionView == collectionView2{
+            let cell2: CollectionViewCell2 = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell2", for: indexPath) as! CollectionViewCell2
+            
+            let val1 = arra2[indexPath.row]
+            cell2.label2.text = String(val1)
+            
+            return cell2
         
-        return cell
+        }else {
+            let cell3: CollectionViewCell3 = collectionView.dequeueReusableCell(withReuseIdentifier: "CollectionViewCell3", for: indexPath) as! CollectionViewCell3
+            
+            let val1 = arra3[indexPath.row]
+            cell3.label3.text = String(val1)
+            
+            return cell3
+        }
+        
+       
     }
     
     
