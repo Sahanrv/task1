@@ -1,0 +1,56 @@
+//
+//  LotteryService.swift
+//  009-CLOVER-LOTTERY
+//
+//  Created by TreineticMacbook003 on 7/25/19.
+//  Copyright © 2019 TreineticMacbook003. All rights reserved.
+//
+
+import Foundation
+import SwiftyJSON
+class LotteryService{
+    
+    static var shared = LotteryService()
+    static var arrayOfDrawData = [DrawData]()
+    
+    func fetchLotteries(handler : @escaping (() -> Void)){
+        
+        let endpoint = Endpoint.init(url: "http://api.trtech.tech/api/data?key=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1lIjoiMDA5IiwiZnJlcXVlbmN5Ijo3LCJkYXRlIjoiMjAxOS0wNy0xNiIsImZvcm1hdCI6W3sidmFsdWVzIjoiQS1aIiwidHlwZSI6Im5vcm1hbCJ9LHsidmFsdWVzIjoiQS1aIiwidHlwZSI6Im5vcm1hbCJ9LHsidmFsdWVzIjoiQS1aIiwidHlwZSI6Im5vcm1hbCJ9LHsidmFsdWVzIjoiQS1aIiwidHlwZSI6Im5vcm1hbCJ9XX0.OshOblyZ6MUp9CthUBDRSjwHtdOUEi_zhS8dx6oSoXo")
+        
+        let net = Net.init(url: endpoint, method : TMethod.get)
+        
+        net.expected = .data
+        net.onError = { error in
+            
+        }
+        
+        net.onCompletion = { data in
+            //hide loading
+            
+            // listofData = decode(data)
+            let d = try?JSON.init(data: data)
+            
+            let lotto =  Lottery.init(json: d ?? [])
+            
+            for id in lotto.data {
+                print(id.draw_id!)
+                print(id.date!)
+                LotteryService.arrayOfDrawData.append(id)
+                
+            }
+            print(LotteryService.arrayOfDrawData.count)
+            
+            
+            
+            
+            
+            handler()
+            print("data 3")
+        }
+        
+        net.perform()
+        //show loading
+        
+    }
+    
+}

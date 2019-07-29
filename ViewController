@@ -1,0 +1,135 @@
+//
+//  ViewController.swift
+//  009-CLOVER-LOTTERY
+//
+//  Created by TreineticMacbook003 on 7/24/19.
+//  Copyright © 2019 TreineticMacbook003. All rights reserved.
+//
+
+import UIKit
+
+class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource{
+    
+    var arrayOfDrawData = [DrawData]()
+    
+    @IBOutlet weak var loader: UIActivityIndicatorView!
+    @IBOutlet weak var subView: UIView!
+    
+    @IBOutlet weak var table: UITableView!
+    @IBOutlet weak var headerView: UIView!
+    @IBOutlet weak var headerImg: UIImageView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        // Do any additional setup after loading the view.
+        
+        self.setupTable()
+        self.setupHeader()
+        self.startProgressLoader()
+        
+        LotteryService.shared.fetchLotteries(handler: {
+            
+            self.arrayOfDrawData = LotteryService.arrayOfDrawData
+            self.table.reloadData()
+            self.stopProgressLoader()
+        })
+        
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return LotteryService.arrayOfDrawData.count
+        
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = table.dequeueReusableCell(withIdentifier: "cell") as! TableViewCell
+        self.setCellStyles(cell : cell)
+        
+        
+        if(arrayOfDrawData.count != 0){
+            for d in arrayOfDrawData{
+                cell.roundId.text = self.arrayOfDrawData[indexPath.item].draw_id + " Round"
+                
+                var array: Array<String> = formatDate(date:self.arrayOfDrawData[indexPath.item].date)
+                let year = array[2]
+                let month = array[1]
+                let split_date = array[0]
+                cell.txtYear.text = year
+                cell.txtMonth.text = month
+                cell.txtDate.text = split_date
+                
+                
+                cell.drawData = LotteryService.arrayOfDrawData[indexPath.item]
+            }
+        }
+        
+        return cell
+        
+    }
+    
+    func startProgressLoader(){
+        subView.addSubview(loader)
+        loader.startAnimating()
+    }
+    func stopProgressLoader(){
+        self.subView.isHidden = true
+        self.loader.stopAnimating()
+    }
+    
+    private func setupTable() {
+        table.delegate = self
+        table.dataSource = self
+    }
+    
+    private func setupHeader(){
+        let degrees : Double = -20; //the value in degrees
+        self.headerView.transform = CGAffineTransform(rotationAngle: CGFloat(degrees * .pi/180))
+        
+        let degrees2 : Double = 20; //the value in degrees
+        self.headerImg.transform = CGAffineTransform(rotationAngle: CGFloat(degrees2 * .pi/180))
+    }
+    
+    private func setCellStyles(cell : TableViewCell){
+        cell.outerView.layer.masksToBounds = true
+        cell.outerView.layer.cornerRadius = 15
+        cell.outerView.layer.shadowOffset = CGSize(width: -1, height: 1)
+        cell.outerView.layer.borderColor = Colors.accentColor
+        
+        cell.layer.transform = CATransform3DMakeScale(0.1,0.1,1)
+        UIView.animate(withDuration: 0.3, animations: {
+            cell.layer.transform = CATransform3DMakeScale(1.05,1.05,1)
+        },completion: { finished in
+            UIView.animate(withDuration: 0.1, animations: {
+                cell.layer.transform = CATransform3DMakeScale(1,1,1)
+            })
+        })
+    }
+    
+    private func formatDate(date : String) -> Array<String>{
+        
+        let dateFormatterGet = DateFormatter()
+        dateFormatterGet.dateFormat = "yyyy-MM-dd"
+        let dateFormatterPrint = DateFormatter()
+        dateFormatterPrint.dateFormat = "dd-MMM-yyyy"
+        if var unformatDate = dateFormatterGet.date(from: date) {
+            print(dateFormatterPrint.string(from: unformatDate))
+            let formattedDate : String = dateFormatterPrint.string(from: unformatDate)
+            let fullFormattedDate    = formattedDate
+            
+            let dateArray = fullFormattedDate.components(separatedBy: "-")
+            
+            return dateArray
+        } else {
+            print("There was an error decoding the string")
+        }
+        return []
+    }
+    
+    @IBAction func btnAbout(_ sender: Any) {
+        performSegue(withIdentifier: "aboutUs", sender: nil)
+    }
+    
+}
+
