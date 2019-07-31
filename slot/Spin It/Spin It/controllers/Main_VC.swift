@@ -18,6 +18,9 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var dialog: UIImageView!
     @IBOutlet weak var dialogView: UIView!
+    @IBOutlet weak var sinButton: UIButton!
+    
+    @IBOutlet weak var countLabel: UILabel!
     
     var imageArray1 = [String]()
     var imageArray2 = [String]()
@@ -25,7 +28,7 @@ class ViewController: UIViewController {
     var imageArray4 = [String]()
     
     let total = 200
-    var inserver = 0
+    var inserver = 3
     var buttonCount = 0 {
         didSet{
             self.viewDialog()
@@ -44,7 +47,7 @@ class ViewController: UIViewController {
   
     func UiConfig(){
         self.secondaryView.layer.borderColor = UIColor(named: "secondary")?.cgColor
-        self.secondaryView.layer.borderWidth = 10
+        self.secondaryView.layer.borderWidth = 5
         
         self.secondaryView.clipsToBounds = true
         self.secondaryView.layer.cornerRadius = 10
@@ -58,22 +61,24 @@ class ViewController: UIViewController {
         self.pickerView3.layer.borderColor = UIColor(named: "secondary")?.cgColor
         self.pickerView4.layer.borderWidth = 2
         self.pickerView4.layer.borderColor = UIColor(named: "secondary")?.cgColor
+        
+        self.countLabel.text = "YOU HAVE \(self.inserver) CHANCES"
     }
     
-//    override func viewDidLayoutSubviews() {
-//        super.viewDidLayoutSubviews()
-//        for i in [1, 2] {
-//            pickerView1.subviews[i].isHidden = true
-//            pickerView2.subviews[i].isHidden = true
-//            pickerView3.subviews[i].isHidden = true
-//            pickerView4.subviews[i].isHidden = true
-//        }
-//    }
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        for i in [1, 2] {
+            pickerView1.subviews[i].isHidden = true
+            pickerView2.subviews[i].isHidden = true
+            pickerView3.subviews[i].isHidden = true
+            pickerView4.subviews[i].isHidden = true
+        }
+    }
     
     func setArrayValues(){
         
-        //let temp = ["banana", "cherry","mango","orange"]
-        let temp = ["banana", "banana","banana","banana"]
+        let temp = ["banana", "cherry","mango","orange"]
+        //let temp = ["banana", "banana","banana","banana"]
         self.imageArray1 = temp.shuffled()
         self.imageArray2 = temp.shuffled()
         self.imageArray3 = temp.shuffled()
@@ -110,12 +115,21 @@ class ViewController: UIViewController {
 
     @IBAction func spinButtonClick(_ sender: Any) {
         
-        if(self.inserver == 3){
-            
+        self.sinButton.isEnabled = false
+        
+        self.countLabel.text = "YOU HAVE \(self.inserver) CHANCES"
+        
+        if(self.inserver == 0){
+
             self.buttonCount = 1
-            self.inserver = 0
             
+
         }
+        
+        _ = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fire), userInfo: nil, repeats: false)
+        
+        
+    
         
         self.pickerView1.selectRow((randomNumber(num: 10)), inComponent: 0, animated: true)
         self.pickerView2.selectRow((randomNumber(num: 10)), inComponent: 0, animated: true)
@@ -132,22 +146,29 @@ class ViewController: UIViewController {
             
             self.dialog.image = UIImage(named: "win")
             print("Win")
-            self.viewDialog()
+            //self.viewDialog()
             
         }else{
             self.dialog.image = UIImage(named: "try")
             print("Try")
-            self.inserver = self.inserver + 1
+            self.inserver = self.inserver - 1
+
             
         }
         
         print(self.inserver)
-        
+      
         
         
     }
     
+    @objc func fire(){
+        self.sinButton.isEnabled = true
+    }
+    
     @IBAction func dialogViewClick(_ sender: Any) {
+        self.inserver = 3
+         self.countLabel.text = "YOU HAVE \(self.inserver) CHANCES"
         self.hideDialog()
     }
     
@@ -178,11 +199,11 @@ extension ViewController: UIPickerViewDelegate, UIPickerViewDataSource{
     }
     
     func pickerView(_ pickerView: UIPickerView, widthForComponent component: Int) -> CGFloat {
-        return 100
+        return 80
     }
     
     func pickerView(_ pickerView: UIPickerView, rowHeightForComponent component: Int) -> CGFloat {
-        return 100
+        return 60
     }
     
     func pickerView(_ pickerView: UIPickerView, viewForRow row: Int, forComponent component: Int, reusing view: UIView?) -> UIView {
