@@ -28,7 +28,7 @@ class ViewController: UIViewController {
     var imageArray4 = [String]()
     
     let total = 200
-    var inserver = 3
+    var inserver = 5
     var buttonCount = 0 {
         didSet{
             self.viewDialog()
@@ -77,7 +77,7 @@ class ViewController: UIViewController {
     
     func setArrayValues(){
         
-        let temp = ["banana", "cherry","mango","orange"]
+        let temp = ["banana", "cherry","mango","orange","soy","berry","citrus","mushroom","plum","melen"]
         //let temp = ["banana", "banana","banana","banana"]
         self.imageArray1 = temp.shuffled()
         self.imageArray2 = temp.shuffled()
@@ -122,11 +122,11 @@ class ViewController: UIViewController {
         if(self.inserver == 0){
 
             self.buttonCount = 1
-            
+
 
         }
         
-        _ = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(fire), userInfo: nil, repeats: false)
+        _ = Timer.scheduledTimer(timeInterval: 0.5, target: self, selector: #selector(fire), userInfo: nil, repeats: false)
         
         
     
@@ -146,7 +146,7 @@ class ViewController: UIViewController {
             
             self.dialog.image = UIImage(named: "win")
             print("Win")
-            //self.viewDialog()
+            self.viewDialog()
             
         }else{
             self.dialog.image = UIImage(named: "try")
@@ -167,7 +167,7 @@ class ViewController: UIViewController {
     }
     
     @IBAction func dialogViewClick(_ sender: Any) {
-        self.inserver = 3
+        self.inserver = 5
          self.countLabel.text = "YOU HAVE \(self.inserver) CHANCES"
         self.hideDialog()
     }

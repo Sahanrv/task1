@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B83715322F17833002FEE29 /* Silom.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7B83715222F177B2002FEE29 /* Silom.ttf */; };
 		7BBFB11E22F1561500AF07C2 /* HowToPlay_VCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BBFB11D22F1561500AF07C2 /* HowToPlay_VCViewController.swift */; };
 		7BF0AA3722EF01CE0023A2B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF0AA3622EF01CE0023A2B0 /* AppDelegate.swift */; };
 		7BF0AA3922EF01CE0023A2B0 /* Main_VC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BF0AA3822EF01CE0023A2B0 /* Main_VC.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B83715222F177B2002FEE29 /* Silom.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Silom.ttf; sourceTree = "<group>"; };
 		7BBFB11D22F1561500AF07C2 /* HowToPlay_VCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlay_VCViewController.swift; sourceTree = "<group>"; };
 		7BF0AA3322EF01CE0023A2B0 /* Spin It.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Spin It.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BF0AA3622EF01CE0023A2B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 		7BBFB11C22F143D400AF07C2 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
+				7B83715222F177B2002FEE29 /* Silom.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -272,6 +275,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B83715322F17833002FEE29 /* Silom.ttf in Resources */,
 				7BF0AA4122EF01D10023A2B0 /* LaunchScreen.storyboard in Resources */,
 				7BF0AA3E22EF01D10023A2B0 /* Assets.xcassets in Resources */,
 				7BF0AA3C22EF01CE0023A2B0 /* Main.storyboard in Resources */,
