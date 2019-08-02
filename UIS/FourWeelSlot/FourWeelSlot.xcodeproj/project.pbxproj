@@ -1,0 +1,635 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BD135C022F43B690012E111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD135BF22F43B690012E111 /* AppDelegate.swift */; };
+		7BD135C522F43B690012E111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD135C322F43B690012E111 /* Main.storyboard */; };
+		7BD135C722F43B6C0012E111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD135C622F43B6C0012E111 /* Assets.xcassets */; };
+		7BD135CA22F43B6C0012E111 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD135C822F43B6C0012E111 /* LaunchScreen.storyboard */; };
+		7BD135D522F43B6C0012E111 /* FourWeelSlotTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD135D422F43B6C0012E111 /* FourWeelSlotTests.swift */; };
+		7BD135E022F43B6C0012E111 /* FourWeelSlotUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD135DF22F43B6C0012E111 /* FourWeelSlotUITests.swift */; };
+		7BD135F222F43DA90012E111 /* Main_Vc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD135F122F43DA90012E111 /* Main_Vc.swift */; };
+		7BD135F522F44BFB0012E111 /* slot.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BD135F422F44BFB0012E111 /* slot.xib */; };
+		7BD135F722F44C160012E111 /* slot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD135F622F44C160012E111 /* slot.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BD135D122F43B6C0012E111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BD135B422F43B690012E111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BD135BB22F43B690012E111;
+			remoteInfo = FourWeelSlot;
+		};
+		7BD135DC22F43B6C0012E111 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BD135B422F43B690012E111 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BD135BB22F43B690012E111;
+			remoteInfo = FourWeelSlot;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		7BD135BC22F43B690012E111 /* FourWeelSlot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourWeelSlot.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD135BF22F43B690012E111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BD135C422F43B690012E111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BD135C622F43B6C0012E111 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BD135C922F43B6C0012E111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BD135CB22F43B6C0012E111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD135D022F43B6C0012E111 /* FourWeelSlotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourWeelSlotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD135D422F43B6C0012E111 /* FourWeelSlotTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourWeelSlotTests.swift; sourceTree = "<group>"; };
+		7BD135D622F43B6C0012E111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD135DB22F43B6C0012E111 /* FourWeelSlotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourWeelSlotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BD135DF22F43B6C0012E111 /* FourWeelSlotUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourWeelSlotUITests.swift; sourceTree = "<group>"; };
+		7BD135E122F43B6C0012E111 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BD135F122F43DA90012E111 /* Main_Vc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Main_Vc.swift; sourceTree = "<group>"; };
+		7BD135F422F44BFB0012E111 /* slot.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = slot.xib; path = ../../../../../../Documents/slot.xib; sourceTree = "<group>"; };
+		7BD135F622F44C160012E111 /* slot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = slot.swift; path = ../../../../../../Documents/slot.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BD135B922F43B690012E111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD135CD22F43B6C0012E111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD135D822F43B6C0012E111 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7BD135B322F43B690012E111 = {
+			isa = PBXGroup;
+			children = (
+				7BD135BE22F43B690012E111 /* FourWeelSlot */,
+				7BD135D322F43B6C0012E111 /* FourWeelSlotTests */,
+				7BD135DE22F43B6C0012E111 /* FourWeelSlotUITests */,
+				7BD135BD22F43B690012E111 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		7BD135BD22F43B690012E111 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BD135BC22F43B690012E111 /* FourWeelSlot.app */,
+				7BD135D022F43B6C0012E111 /* FourWeelSlotTests.xctest */,
+				7BD135DB22F43B6C0012E111 /* FourWeelSlotUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BD135BE22F43B690012E111 /* FourWeelSlot */ = {
+			isa = PBXGroup;
+			children = (
+				7BD135F022F43D8C0012E111 /* models */,
+				7BD135EF22F43D420012E111 /* storyboards */,
+				7BD135EE22F43D380012E111 /* views */,
+				7BD135ED22F43D290012E111 /* controllers */,
+				7BD135BF22F43B690012E111 /* AppDelegate.swift */,
+				7BD135C622F43B6C0012E111 /* Assets.xcassets */,
+				7BD135C822F43B6C0012E111 /* LaunchScreen.storyboard */,
+				7BD135CB22F43B6C0012E111 /* Info.plist */,
+			);
+			path = FourWeelSlot;
+			sourceTree = "<group>";
+		};
+		7BD135D322F43B6C0012E111 /* FourWeelSlotTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BD135D422F43B6C0012E111 /* FourWeelSlotTests.swift */,
+				7BD135D622F43B6C0012E111 /* Info.plist */,
+			);
+			path = FourWeelSlotTests;
+			sourceTree = "<group>";
+		};
+		7BD135DE22F43B6C0012E111 /* FourWeelSlotUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BD135DF22F43B6C0012E111 /* FourWeelSlotUITests.swift */,
+				7BD135E122F43B6C0012E111 /* Info.plist */,
+			);
+			path = FourWeelSlotUITests;
+			sourceTree = "<group>";
+		};
+		7BD135ED22F43D290012E111 /* controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7BD135F122F43DA90012E111 /* Main_Vc.swift */,
+			);
+			path = controllers;
+			sourceTree = "<group>";
+		};
+		7BD135EE22F43D380012E111 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7BD135F322F44BE30012E111 /* slot */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		7BD135EF22F43D420012E111 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				7BD135C322F43B690012E111 /* Main.storyboard */,
+			);
+			path = storyboards;
+			sourceTree = "<group>";
+		};
+		7BD135F022F43D8C0012E111 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		7BD135F322F44BE30012E111 /* slot */ = {
+			isa = PBXGroup;
+			children = (
+				7BD135F422F44BFB0012E111 /* slot.xib */,
+				7BD135F622F44C160012E111 /* slot.swift */,
+			);
+			path = slot;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BD135BB22F43B690012E111 /* FourWeelSlot */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BD135E422F43B6C0012E111 /* Build configuration list for PBXNativeTarget "FourWeelSlot" */;
+			buildPhases = (
+				7BD135B822F43B690012E111 /* Sources */,
+				7BD135B922F43B690012E111 /* Frameworks */,
+				7BD135BA22F43B690012E111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FourWeelSlot;
+			productName = FourWeelSlot;
+			productReference = 7BD135BC22F43B690012E111 /* FourWeelSlot.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BD135CF22F43B6C0012E111 /* FourWeelSlotTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BD135E722F43B6C0012E111 /* Build configuration list for PBXNativeTarget "FourWeelSlotTests" */;
+			buildPhases = (
+				7BD135CC22F43B6C0012E111 /* Sources */,
+				7BD135CD22F43B6C0012E111 /* Frameworks */,
+				7BD135CE22F43B6C0012E111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BD135D222F43B6C0012E111 /* PBXTargetDependency */,
+			);
+			name = FourWeelSlotTests;
+			productName = FourWeelSlotTests;
+			productReference = 7BD135D022F43B6C0012E111 /* FourWeelSlotTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BD135DA22F43B6C0012E111 /* FourWeelSlotUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BD135EA22F43B6C0012E111 /* Build configuration list for PBXNativeTarget "FourWeelSlotUITests" */;
+			buildPhases = (
+				7BD135D722F43B6C0012E111 /* Sources */,
+				7BD135D822F43B6C0012E111 /* Frameworks */,
+				7BD135D922F43B6C0012E111 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BD135DD22F43B6C0012E111 /* PBXTargetDependency */,
+			);
+			name = FourWeelSlotUITests;
+			productName = FourWeelSlotUITests;
+			productReference = 7BD135DB22F43B6C0012E111 /* FourWeelSlotUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BD135B422F43B690012E111 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "Treinetic Macbook 001";
+				TargetAttributes = {
+					7BD135BB22F43B690012E111 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					7BD135CF22F43B6C0012E111 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7BD135BB22F43B690012E111;
+					};
+					7BD135DA22F43B6C0012E111 = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7BD135BB22F43B690012E111;
+					};
+				};
+			};
+			buildConfigurationList = 7BD135B722F43B690012E111 /* Build configuration list for PBXProject "FourWeelSlot" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BD135B322F43B690012E111;
+			productRefGroup = 7BD135BD22F43B690012E111 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BD135BB22F43B690012E111 /* FourWeelSlot */,
+				7BD135CF22F43B6C0012E111 /* FourWeelSlotTests */,
+				7BD135DA22F43B6C0012E111 /* FourWeelSlotUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BD135BA22F43B690012E111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD135CA22F43B6C0012E111 /* LaunchScreen.storyboard in Resources */,
+				7BD135C722F43B6C0012E111 /* Assets.xcassets in Resources */,
+				7BD135C522F43B690012E111 /* Main.storyboard in Resources */,
+				7BD135F522F44BFB0012E111 /* slot.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD135CE22F43B6C0012E111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD135D922F43B6C0012E111 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BD135B822F43B690012E111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD135F722F44C160012E111 /* slot.swift in Sources */,
+				7BD135C022F43B690012E111 /* AppDelegate.swift in Sources */,
+				7BD135F222F43DA90012E111 /* Main_Vc.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD135CC22F43B6C0012E111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD135D522F43B6C0012E111 /* FourWeelSlotTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BD135D722F43B6C0012E111 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BD135E022F43B6C0012E111 /* FourWeelSlotUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BD135D222F43B6C0012E111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BD135BB22F43B690012E111 /* FourWeelSlot */;
+			targetProxy = 7BD135D122F43B6C0012E111 /* PBXContainerItemProxy */;
+		};
+		7BD135DD22F43B6C0012E111 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BD135BB22F43B690012E111 /* FourWeelSlot */;
+			targetProxy = 7BD135DC22F43B6C0012E111 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BD135C322F43B690012E111 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BD135C422F43B690012E111 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BD135C822F43B6C0012E111 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BD135C922F43B6C0012E111 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BD135E222F43B6C0012E111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BD135E322F43B6C0012E111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BD135E522F43B6C0012E111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FourWeelSlot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.005.FourWeelSlot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BD135E622F43B6C0012E111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FourWeelSlot/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.005.FourWeelSlot;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BD135E822F43B6C0012E111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FourWeelSlotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.005.FourWeelSlotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FourWeelSlot.app/FourWeelSlot";
+			};
+			name = Debug;
+		};
+		7BD135E922F43B6C0012E111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FourWeelSlotTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.005.FourWeelSlotTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/FourWeelSlot.app/FourWeelSlot";
+			};
+			name = Release;
+		};
+		7BD135EB22F43B6C0012E111 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FourWeelSlotUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.005.FourWeelSlotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FourWeelSlot;
+			};
+			name = Debug;
+		};
+		7BD135EC22F43B6C0012E111 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = FourWeelSlotUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.005.FourWeelSlotUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = FourWeelSlot;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BD135B722F43B690012E111 /* Build configuration list for PBXProject "FourWeelSlot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD135E222F43B6C0012E111 /* Debug */,
+				7BD135E322F43B6C0012E111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BD135E422F43B6C0012E111 /* Build configuration list for PBXNativeTarget "FourWeelSlot" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD135E522F43B6C0012E111 /* Debug */,
+				7BD135E622F43B6C0012E111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BD135E722F43B6C0012E111 /* Build configuration list for PBXNativeTarget "FourWeelSlotTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD135E822F43B6C0012E111 /* Debug */,
+				7BD135E922F43B6C0012E111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BD135EA22F43B6C0012E111 /* Build configuration list for PBXNativeTarget "FourWeelSlotUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BD135EB22F43B6C0012E111 /* Debug */,
+				7BD135EC22F43B6C0012E111 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BD135B422F43B690012E111 /* Project object */;
+}
