@@ -8,15 +8,15 @@
 
 import Foundation
 import UIKit
-protocol CustomAlertDelegate {
-    func didClickDismiss()
-}
+//protocol CustomAlertDelegate {
+//    func didClickDismiss()
+//}
 
 class CustomAlert : UIView{
     
     @IBOutlet weak var alertButton: UIButton!
-    
-    var getData : ((_ name : String) -> String)? 
+    //var closeAlert : (() -> ())?
+    var closeAlert : ((_ name : String) -> String)?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -37,7 +37,16 @@ class CustomAlert : UIView{
     }
     
     @IBAction func alertButtonClick(_ sender: Any) {
-        let out = self.getData?("Hasitha")
-        print(out)
+//        let out = self.getData?("Hasitha")
+//        print(out)
+        
+        let name = closeAlert!("kamal")
+        print(name)
+//
+       // closeAlert!()
+        
+        
+        
+        
     }
 }

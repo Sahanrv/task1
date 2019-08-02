@@ -25,9 +25,18 @@
                                     <action selector="didClickShowAlert:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xi9-iv-xbT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9QA-QQ-bPL">
+                                <rect key="frame" x="160.5" y="433" width="93" height="30"/>
+                                <state key="normal" title="My New Alert"/>
+                                <connections>
+                                    <action selector="didClickAlertNew:" destination="BYZ-38-t0r" eventType="touchUpInside" id="DVt-MX-COb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="9QA-QQ-bPL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="2pf-b7-HSm"/>
+                            <constraint firstItem="9QA-QQ-bPL" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Aqn-mR-Id5"/>
                             <constraint firstItem="56u-ue-0dQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BOa-jj-LZa"/>
                             <constraint firstItem="56u-ue-0dQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="47" id="EgL-i5-dIH"/>
                         </constraints>

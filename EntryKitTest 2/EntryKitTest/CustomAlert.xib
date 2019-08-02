@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomAlert" customModule="EntryKitTest" customModuleProvider="target">
+            <connections>
+                <outlet property="alertButton" destination="rjf-E5-KQz" id="rfS-8B-Jx9"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="588"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Alert Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxm-ru-jai">
+                    <rect key="frame" x="20" y="64" width="374" height="29"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Aler message here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f6t-qG-Oyz">
+                    <rect key="frame" x="20" y="112" width="374" height="23"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rjf-E5-KQz">
+                    <rect key="frame" x="20" y="165" width="71" height="369"/>
+                    <state key="normal" title="OK Button"/>
+                    <connections>
+                        <action selector="alertButtonClick:" destination="-1" eventType="touchUpInside" id="xfK-cm-941"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="f6t-qG-Oyz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="7p1-1M-uoA"/>
+                <constraint firstItem="f6t-qG-Oyz" firstAttribute="top" secondItem="Cxm-ru-jai" secondAttribute="bottom" constant="19" id="9ib-hX-Gu6"/>
+                <constraint firstItem="rjf-E5-KQz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="E3j-WT-H5U"/>
+                <constraint firstItem="Cxm-ru-jai" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="Exk-A5-PXp"/>
+                <constraint firstItem="rjf-E5-KQz" firstAttribute="top" secondItem="f6t-qG-Oyz" secondAttribute="bottom" constant="30" id="PIt-WM-BE3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Cxm-ru-jai" secondAttribute="trailing" constant="20" id="fxO-wX-oDQ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="f6t-qG-Oyz" secondAttribute="trailing" constant="20" id="jce-1z-MKO"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="rjf-E5-KQz" secondAttribute="bottom" constant="20" id="yxZ-qb-udJ"/>
+                <constraint firstItem="Cxm-ru-jai" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="20" id="zf5-Dk-GBQ"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="37.681159420289859" y="137.94642857142856"/>
+        </view>
+    </objects>
+</document>
