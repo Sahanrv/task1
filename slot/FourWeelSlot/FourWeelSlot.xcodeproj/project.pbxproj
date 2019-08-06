@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B2BF69C22F980C90097F885 /* audio.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 7B2BF69B22F980C90097F885 /* audio.mp3 */; };
+		7B2BF6A422F990780097F885 /* Second_Vc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B2BF6A322F990780097F885 /* Second_Vc.swift */; };
 		7BD135C022F43B690012E111 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BD135BF22F43B690012E111 /* AppDelegate.swift */; };
 		7BD135C522F43B690012E111 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BD135C322F43B690012E111 /* Main.storyboard */; };
 		7BD135C722F43B6C0012E111 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BD135C622F43B6C0012E111 /* Assets.xcassets */; };
@@ -36,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7B2BF69B22F980C90097F885 /* audio.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = audio.mp3; path = ../../../Assets/audio.mp3; sourceTree = "<group>"; };
+		7B2BF6A322F990780097F885 /* Second_Vc.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Second_Vc.swift; sourceTree = "<group>"; };
 		7BD135BC22F43B690012E111 /* FourWeelSlot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourWeelSlot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BD135BF22F43B690012E111 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7BD135C422F43B690012E111 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -78,6 +82,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7B2BF69A22F980980097F885 /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7B2BF69B22F980C90097F885 /* audio.mp3 */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
 		7BD135B322F43B690012E111 = {
 			isa = PBXGroup;
 			children = (
@@ -101,6 +113,7 @@
 		7BD135BE22F43B690012E111 /* FourWeelSlot */ = {
 			isa = PBXGroup;
 			children = (
+				7B2BF69A22F980980097F885 /* sounds */,
 				7BD135F022F43D8C0012E111 /* models */,
 				7BD135EF22F43D420012E111 /* storyboards */,
 				7BD135EE22F43D380012E111 /* views */,
@@ -135,6 +148,7 @@
 			isa = PBXGroup;
 			children = (
 				7BD135F122F43DA90012E111 /* Main_Vc.swift */,
+				7B2BF6A322F990780097F885 /* Second_Vc.swift */,
 			);
 			path = controllers;
 			sourceTree = "<group>";
@@ -279,6 +293,7 @@
 				7BD135C722F43B6C0012E111 /* Assets.xcassets in Resources */,
 				7BD135C522F43B690012E111 /* Main.storyboard in Resources */,
 				7BD135F522F44BFB0012E111 /* slot.xib in Resources */,
+				7B2BF69C22F980C90097F885 /* audio.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,6 +320,7 @@
 			files = (
 				7BD135F722F44C160012E111 /* slot.swift in Sources */,
 				7BD135C022F43B690012E111 /* AppDelegate.swift in Sources */,
+				7B2BF6A422F990780097F885 /* Second_Vc.swift in Sources */,
 				7BD135F222F43DA90012E111 /* Main_Vc.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
