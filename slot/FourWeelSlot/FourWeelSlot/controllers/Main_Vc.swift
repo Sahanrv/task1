@@ -19,7 +19,10 @@ class Main_Vc: UIViewController {
     @IBOutlet weak var pointLabel: UILabel!
     @IBOutlet weak var winLbl: UILabel!
     @IBOutlet weak var lossLbl: UILabel!
+    @IBOutlet weak var messageView: UIView!
+    @IBOutlet weak var messageImage: UIImageView!
     
+  
     var isRunning = false
     var result1: String!
     var result2: String!
@@ -45,32 +48,33 @@ class Main_Vc: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.hideMessageView()
         self.uIConfig()
         // Do any additional setup after loading the view.
     }
     
     override func viewDidAppear(_ animated: Bool) {
-//        let imgArray = [
-//            Item(value: "1", it: "1"),
-//            Item(value: "2", it: "2"),
-//            Item(value: "3", it: "3"),
-//            Item(value: "4", it: "4"),
-//            Item(value: "5", it: "5"),
-//            Item(value: "6", it: "6"),
-//            Item(value: "7", it: "7"),
-//            Item(value: "8", it: "8"),
-//        ]
-        
         let imgArray = [
             Item(value: "1", it: "1"),
             Item(value: "2", it: "2"),
             Item(value: "3", it: "3"),
             Item(value: "4", it: "4"),
-            Item(value: "3", it: "3"),
-            Item(value: "3", it: "3"),
-            Item(value: "3", it: "3"),
+            Item(value: "5", it: "5"),
             Item(value: "6", it: "6"),
+            Item(value: "7", it: "7"),
+            Item(value: "4", it: "4"),
         ]
+        
+//        let imgArray = [
+//            Item(value: "1", it: "1"),
+//            Item(value: "2", it: "2"),
+//            Item(value: "3", it: "3"),
+//            Item(value: "4", it: "4"),
+//            Item(value: "3", it: "3"),
+//            Item(value: "3", it: "3"),
+//            Item(value: "3", it: "3"),
+//            Item(value: "6", it: "6"),
+//        ]
         
         slot1.viewType = .image
         slot2.viewType = .image
@@ -117,6 +121,10 @@ class Main_Vc: UIViewController {
 
             })
         
+    }
+    
+    @IBAction func didClickMessageView(_ sender: Any) {
+        self.hideMessageView()
     }
     
     func didButtonClickSound(){
@@ -192,21 +200,38 @@ class Main_Vc: UIViewController {
             self.points = self.points + self.addWinPoints
             self.winPercentage = self.winPercentage + point
             self.pointLabel.text = String(points)
-            self.winLbl.text = String(winPercentage)
+//            self.winLbl.text = String(winPercentage)
+            self.messageImage.image = UIImage(named: "winner")
+            self.showMessageView()
             
         }else{
             
             self.points = self.points + addPoints
             self.winPercentage = self.winPercentage + point
             self.pointLabel.text = String(points)
-            self.winLbl.text = String(winPercentage)
+//            self.winLbl.text = String(winPercentage)
+            self.messageImage.image = UIImage(named: "win")
+             self.showMessageView()
         }
     }
     
     func lossPoint(point: Double!){
             self.lossPercentage = self.lossPercentage + point
-            self.lossLbl.text = String(lossPercentage)
+//            self.lossLbl.text = String(lossPercentage)
+        self.messageImage.image = UIImage(named: "try")
+        self.showMessageView()
     }
+    
+    func showMessageView(){
+        self.messageView.isHidden = false
+    }
+    
+    func hideMessageView(){
+        self.messageView.isHidden = true
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 

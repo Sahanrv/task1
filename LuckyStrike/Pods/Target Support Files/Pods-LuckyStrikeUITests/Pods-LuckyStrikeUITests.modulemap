@@ -1,0 +1,6 @@
+framework module Pods_LuckyStrikeUITests {
+  umbrella header "Pods-LuckyStrikeUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

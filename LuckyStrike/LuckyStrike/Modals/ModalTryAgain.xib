@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="ralewaysemibold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ModalTryAgain" customModule="LuckyStrike" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4m3-wz-t3V">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="294"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jCd-uC-Qvw">
+                            <rect key="frame" x="358" y="8" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="48" id="9dt-ad-QiN"/>
+                                <constraint firstAttribute="height" constant="48" id="Vlv-Rk-8KA"/>
+                            </constraints>
+                            <state key="normal" image="close"/>
+                            <connections>
+                                <action selector="didClickClose:" destination="-1" eventType="touchUpInside" id="UbO-UZ-EAh"/>
+                            </connections>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRY AGAIN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B6O-AB-VV3">
+                            <rect key="frame" x="62" y="55" width="290" height="65"/>
+                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="56"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TRY AGAIN &amp; WIN MORE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vc2-fu-PbQ">
+                            <rect key="frame" x="103" y="136" width="208" height="22"/>
+                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="18"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bd5-aJ-Lq1">
+                            <rect key="frame" x="71" y="174" width="272" height="72"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="44"/>
+                            <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                            <state key="normal" title="PLAY AGAIN">
+                                <color key="titleColor" name="dangerDark"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                    <integer key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="didClickPlayAgain:" destination="-1" eventType="touchUpInside" id="x2d-0b-1ne"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" name="dangerLight"/>
+                    <constraints>
+                        <constraint firstItem="B6O-AB-VV3" firstAttribute="top" secondItem="4m3-wz-t3V" secondAttribute="top" constant="55" id="15u-F6-Cgu"/>
+                        <constraint firstItem="vc2-fu-PbQ" firstAttribute="top" secondItem="B6O-AB-VV3" secondAttribute="bottom" constant="16" id="5dO-Zx-lse"/>
+                        <constraint firstItem="B6O-AB-VV3" firstAttribute="centerX" secondItem="4m3-wz-t3V" secondAttribute="centerX" id="BJ1-kv-GxR"/>
+                        <constraint firstItem="vc2-fu-PbQ" firstAttribute="centerY" secondItem="4m3-wz-t3V" secondAttribute="centerY" id="RXL-qa-g3a"/>
+                        <constraint firstItem="jCd-uC-Qvw" firstAttribute="top" secondItem="4m3-wz-t3V" secondAttribute="top" constant="8" id="W7w-Pi-qLM"/>
+                        <constraint firstAttribute="trailing" secondItem="jCd-uC-Qvw" secondAttribute="trailing" constant="8" id="b1o-eb-Fqw"/>
+                        <constraint firstItem="vc2-fu-PbQ" firstAttribute="centerX" secondItem="4m3-wz-t3V" secondAttribute="centerX" id="eI4-Uz-n21"/>
+                        <constraint firstItem="bd5-aJ-Lq1" firstAttribute="top" secondItem="vc2-fu-PbQ" secondAttribute="bottom" constant="16" id="fw6-TI-nw3"/>
+                        <constraint firstItem="bd5-aJ-Lq1" firstAttribute="centerX" secondItem="4m3-wz-t3V" secondAttribute="centerX" id="xPv-dw-KJ3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="4m3-wz-t3V" secondAttribute="bottom" id="1FN-VA-DtD"/>
+                <constraint firstItem="4m3-wz-t3V" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="5Tf-9W-FlP"/>
+                <constraint firstItem="4m3-wz-t3V" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="H30-vr-Es4"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="4m3-wz-t3V" secondAttribute="trailing" id="gLl-L2-QKy"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="57.971014492753625" y="35.491071428571423"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="close" width="100" height="100"/>
+        <namedColor name="dangerDark">
+            <color red="0.50588235294117645" green="0.0" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="dangerLight">
+            <color red="0.63529411764705879" green="0.0" blue="0.14509803921568629" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

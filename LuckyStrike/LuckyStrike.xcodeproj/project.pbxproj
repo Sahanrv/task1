@@ -1,0 +1,831 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7BA2109922F43F5100EB086F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA2109822F43F5100EB086F /* AppDelegate.swift */; };
+		7BA2109B22F43F5100EB086F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA2109A22F43F5100EB086F /* ViewController.swift */; };
+		7BA2109E22F43F5100EB086F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA2109C22F43F5100EB086F /* Main.storyboard */; };
+		7BA210A322F43F5200EB086F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7BA210A122F43F5200EB086F /* LaunchScreen.storyboard */; };
+		7BA210AE22F43F5300EB086F /* LuckyStrikeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA210AD22F43F5300EB086F /* LuckyStrikeTests.swift */; };
+		7BA210B922F43F5300EB086F /* LuckyStrikeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA210B822F43F5300EB086F /* LuckyStrikeUITests.swift */; };
+		7BA210C622F446C800EB086F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7BA2109F22F43F5200EB086F /* Assets.xcassets */; };
+		7BA210C922F4478D00EB086F /* raleway.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA210C822F4478D00EB086F /* raleway.ttf */; };
+		7BA210CB22F448BF00EB086F /* ralewaybold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA210CA22F448BF00EB086F /* ralewaybold.ttf */; };
+		7BA210CD22F4490C00EB086F /* ralewaysemibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7BA210CC22F4490C00EB086F /* ralewaysemibold.ttf */; };
+		7BA210D622F4748B00EB086F /* HowToPlayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA210D522F4748B00EB086F /* HowToPlayViewController.swift */; };
+		7BA210D922F47BE300EB086F /* ModalWin.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BA210D822F47BE300EB086F /* ModalWin.xib */; };
+		7BA210DB22F47BF300EB086F /* ModalWin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA210DA22F47BF300EB086F /* ModalWin.swift */; };
+		7BAB166022F7ECFF00D7C8F8 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB165F22F7ECFF00D7C8F8 /* Colors.swift */; };
+		7BAB166422F81B6A00D7C8F8 /* Gradients.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB166322F81B6A00D7C8F8 /* Gradients.swift */; };
+		7BAB166622F8316700D7C8F8 /* ModalTryAgain.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BAB166522F8316700D7C8F8 /* ModalTryAgain.xib */; };
+		7BAB166822F8344900D7C8F8 /* ModalTryAgain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BAB166722F8344900D7C8F8 /* ModalTryAgain.swift */; };
+		7BCE2D3F22FAA55D002EBEFC /* strike_button_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = 7BCE2D3E22FAA55D002EBEFC /* strike_button_sound.wav */; };
+		7BCE2D4222FAA5C1002EBEFC /* SlotSound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE2D4122FAA5C1002EBEFC /* SlotSound.swift */; };
+		7BCE2D4422FAB25E002EBEFC /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BCE2D4322FAB25E002EBEFC /* CardView.swift */; };
+		7BEDD1F922F9B34800969070 /* SlotItem.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7BEDD1F822F9B34800969070 /* SlotItem.xib */; };
+		7BEDD1FB22F9B3E300969070 /* SlotItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BEDD1FA22F9B3E300969070 /* SlotItem.swift */; };
+		82927DD03459D6997900E0EB /* Pods_LuckyStrikeUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 09E6BDD23BB8796C0128EF03 /* Pods_LuckyStrikeUITests.framework */; };
+		A309DAA3B768A53BC1C3A1A2 /* Pods_LuckyStrike.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7D57C9F9B764B4EFD0B44C65 /* Pods_LuckyStrike.framework */; };
+		E4F256F870025660EF6A18DE /* Pods_LuckyStrikeTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 194A88FFFFCD3627662E998D /* Pods_LuckyStrikeTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7BA210AA22F43F5300EB086F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BA2108D22F43F5100EB086F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BA2109422F43F5100EB086F;
+			remoteInfo = LuckyStrike;
+		};
+		7BA210B522F43F5300EB086F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 7BA2108D22F43F5100EB086F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 7BA2109422F43F5100EB086F;
+			remoteInfo = LuckyStrike;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		09E6BDD23BB8796C0128EF03 /* Pods_LuckyStrikeUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyStrikeUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		194A88FFFFCD3627662E998D /* Pods_LuckyStrikeTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyStrikeTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		66B8CDF1644CA3F92DE9A45F /* Pods-LuckyStrike.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyStrike.release.xcconfig"; path = "Target Support Files/Pods-LuckyStrike/Pods-LuckyStrike.release.xcconfig"; sourceTree = "<group>"; };
+		7BA2109522F43F5100EB086F /* LuckyStrike.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LuckyStrike.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BA2109822F43F5100EB086F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7BA2109A22F43F5100EB086F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7BA2109D22F43F5100EB086F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7BA2109F22F43F5200EB086F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7BA210A222F43F5200EB086F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7BA210A422F43F5200EB086F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BA210A922F43F5300EB086F /* LuckyStrikeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyStrikeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BA210AD22F43F5300EB086F /* LuckyStrikeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyStrikeTests.swift; sourceTree = "<group>"; };
+		7BA210AF22F43F5300EB086F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BA210B422F43F5300EB086F /* LuckyStrikeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LuckyStrikeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7BA210B822F43F5300EB086F /* LuckyStrikeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuckyStrikeUITests.swift; sourceTree = "<group>"; };
+		7BA210BA22F43F5300EB086F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7BA210C822F4478D00EB086F /* raleway.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = raleway.ttf; sourceTree = "<group>"; };
+		7BA210CA22F448BF00EB086F /* ralewaybold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaybold.ttf; sourceTree = "<group>"; };
+		7BA210CC22F4490C00EB086F /* ralewaysemibold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = ralewaysemibold.ttf; sourceTree = "<group>"; };
+		7BA210D522F4748B00EB086F /* HowToPlayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HowToPlayViewController.swift; sourceTree = "<group>"; };
+		7BA210D822F47BE300EB086F /* ModalWin.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalWin.xib; sourceTree = "<group>"; };
+		7BA210DA22F47BF300EB086F /* ModalWin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalWin.swift; sourceTree = "<group>"; };
+		7BAB165F22F7ECFF00D7C8F8 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		7BAB166322F81B6A00D7C8F8 /* Gradients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Gradients.swift; sourceTree = "<group>"; };
+		7BAB166522F8316700D7C8F8 /* ModalTryAgain.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ModalTryAgain.xib; sourceTree = "<group>"; };
+		7BAB166722F8344900D7C8F8 /* ModalTryAgain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalTryAgain.swift; sourceTree = "<group>"; };
+		7BCE2D3E22FAA55D002EBEFC /* strike_button_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = strike_button_sound.wav; sourceTree = "<group>"; };
+		7BCE2D4122FAA5C1002EBEFC /* SlotSound.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotSound.swift; sourceTree = "<group>"; };
+		7BCE2D4322FAB25E002EBEFC /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		7BEDD1F822F9B34800969070 /* SlotItem.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SlotItem.xib; sourceTree = "<group>"; };
+		7BEDD1FA22F9B3E300969070 /* SlotItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SlotItem.swift; sourceTree = "<group>"; };
+		7D57C9F9B764B4EFD0B44C65 /* Pods_LuckyStrike.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LuckyStrike.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AC0A4717E4CBA0F6313A30A /* Pods-LuckyStrikeTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyStrikeTests.release.xcconfig"; path = "Target Support Files/Pods-LuckyStrikeTests/Pods-LuckyStrikeTests.release.xcconfig"; sourceTree = "<group>"; };
+		8E3B75E918876FC3458AB82A /* Pods-LuckyStrike.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyStrike.debug.xcconfig"; path = "Target Support Files/Pods-LuckyStrike/Pods-LuckyStrike.debug.xcconfig"; sourceTree = "<group>"; };
+		D234F659C2E48EFB91C45C19 /* Pods-LuckyStrikeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyStrikeUITests.release.xcconfig"; path = "Target Support Files/Pods-LuckyStrikeUITests/Pods-LuckyStrikeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		D5A5ED6B8610C78E285F5AEC /* Pods-LuckyStrikeTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyStrikeTests.debug.xcconfig"; path = "Target Support Files/Pods-LuckyStrikeTests/Pods-LuckyStrikeTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E28AB8D4EA707358BC786A97 /* Pods-LuckyStrikeUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LuckyStrikeUITests.debug.xcconfig"; path = "Target Support Files/Pods-LuckyStrikeUITests/Pods-LuckyStrikeUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7BA2109222F43F5100EB086F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A309DAA3B768A53BC1C3A1A2 /* Pods_LuckyStrike.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA210A622F43F5300EB086F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E4F256F870025660EF6A18DE /* Pods_LuckyStrikeTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA210B122F43F5300EB086F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				82927DD03459D6997900E0EB /* Pods_LuckyStrikeUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		63D11A9FCFEF36E942931CF2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8E3B75E918876FC3458AB82A /* Pods-LuckyStrike.debug.xcconfig */,
+				66B8CDF1644CA3F92DE9A45F /* Pods-LuckyStrike.release.xcconfig */,
+				D5A5ED6B8610C78E285F5AEC /* Pods-LuckyStrikeTests.debug.xcconfig */,
+				8AC0A4717E4CBA0F6313A30A /* Pods-LuckyStrikeTests.release.xcconfig */,
+				E28AB8D4EA707358BC786A97 /* Pods-LuckyStrikeUITests.debug.xcconfig */,
+				D234F659C2E48EFB91C45C19 /* Pods-LuckyStrikeUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7BA2108C22F43F5100EB086F = {
+			isa = PBXGroup;
+			children = (
+				7BA2109722F43F5100EB086F /* LuckyStrike */,
+				7BA210AC22F43F5300EB086F /* LuckyStrikeTests */,
+				7BA210B722F43F5300EB086F /* LuckyStrikeUITests */,
+				7BA2109622F43F5100EB086F /* Products */,
+				63D11A9FCFEF36E942931CF2 /* Pods */,
+				F20627C6F45D0FF0CD301B48 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7BA2109622F43F5100EB086F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7BA2109522F43F5100EB086F /* LuckyStrike.app */,
+				7BA210A922F43F5300EB086F /* LuckyStrikeTests.xctest */,
+				7BA210B422F43F5300EB086F /* LuckyStrikeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7BA2109722F43F5100EB086F /* LuckyStrike */ = {
+			isa = PBXGroup;
+			children = (
+				7BCE2D4022FAA5AF002EBEFC /* Classes */,
+				7BCE2D3D22FAA4F6002EBEFC /* Sounds */,
+				7BEDD1F722F9B33500969070 /* SlotItem */,
+				7BAB166122F81B4900D7C8F8 /* Colors */,
+				7BA210D722F47BA500EB086F /* Modals */,
+				7BA210C722F4477400EB086F /* Fonts */,
+				7BA2109822F43F5100EB086F /* AppDelegate.swift */,
+				7BA2109A22F43F5100EB086F /* ViewController.swift */,
+				7BA2109C22F43F5100EB086F /* Main.storyboard */,
+				7BA2109F22F43F5200EB086F /* Assets.xcassets */,
+				7BA210A122F43F5200EB086F /* LaunchScreen.storyboard */,
+				7BA210A422F43F5200EB086F /* Info.plist */,
+				7BA210D522F4748B00EB086F /* HowToPlayViewController.swift */,
+			);
+			path = LuckyStrike;
+			sourceTree = "<group>";
+		};
+		7BA210AC22F43F5300EB086F /* LuckyStrikeTests */ = {
+			isa = PBXGroup;
+			children = (
+				7BA210AD22F43F5300EB086F /* LuckyStrikeTests.swift */,
+				7BA210AF22F43F5300EB086F /* Info.plist */,
+			);
+			path = LuckyStrikeTests;
+			sourceTree = "<group>";
+		};
+		7BA210B722F43F5300EB086F /* LuckyStrikeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7BA210B822F43F5300EB086F /* LuckyStrikeUITests.swift */,
+				7BA210BA22F43F5300EB086F /* Info.plist */,
+			);
+			path = LuckyStrikeUITests;
+			sourceTree = "<group>";
+		};
+		7BA210C722F4477400EB086F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				7BA210CA22F448BF00EB086F /* ralewaybold.ttf */,
+				7BA210CC22F4490C00EB086F /* ralewaysemibold.ttf */,
+				7BA210C822F4478D00EB086F /* raleway.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		7BA210D722F47BA500EB086F /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				7BA210D822F47BE300EB086F /* ModalWin.xib */,
+				7BA210DA22F47BF300EB086F /* ModalWin.swift */,
+				7BAB166522F8316700D7C8F8 /* ModalTryAgain.xib */,
+				7BAB166722F8344900D7C8F8 /* ModalTryAgain.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		7BAB166122F81B4900D7C8F8 /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+				7BAB165F22F7ECFF00D7C8F8 /* Colors.swift */,
+				7BAB166322F81B6A00D7C8F8 /* Gradients.swift */,
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		7BCE2D3D22FAA4F6002EBEFC /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				7BCE2D3E22FAA55D002EBEFC /* strike_button_sound.wav */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		7BCE2D4022FAA5AF002EBEFC /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				7BCE2D4122FAA5C1002EBEFC /* SlotSound.swift */,
+				7BCE2D4322FAB25E002EBEFC /* CardView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		7BEDD1F722F9B33500969070 /* SlotItem */ = {
+			isa = PBXGroup;
+			children = (
+				7BEDD1F822F9B34800969070 /* SlotItem.xib */,
+				7BEDD1FA22F9B3E300969070 /* SlotItem.swift */,
+			);
+			path = SlotItem;
+			sourceTree = "<group>";
+		};
+		F20627C6F45D0FF0CD301B48 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7D57C9F9B764B4EFD0B44C65 /* Pods_LuckyStrike.framework */,
+				194A88FFFFCD3627662E998D /* Pods_LuckyStrikeTests.framework */,
+				09E6BDD23BB8796C0128EF03 /* Pods_LuckyStrikeUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7BA2109422F43F5100EB086F /* LuckyStrike */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BA210BD22F43F5300EB086F /* Build configuration list for PBXNativeTarget "LuckyStrike" */;
+			buildPhases = (
+				CB5489EF1F92EF4B51541342 /* [CP] Check Pods Manifest.lock */,
+				7BA2109122F43F5100EB086F /* Sources */,
+				7BA2109222F43F5100EB086F /* Frameworks */,
+				7BA2109322F43F5100EB086F /* Resources */,
+				D1A6F1EAF516F317404924F7 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LuckyStrike;
+			productName = LuckyStrike;
+			productReference = 7BA2109522F43F5100EB086F /* LuckyStrike.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7BA210A822F43F5300EB086F /* LuckyStrikeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BA210C022F43F5300EB086F /* Build configuration list for PBXNativeTarget "LuckyStrikeTests" */;
+			buildPhases = (
+				7612F9434FBF1E8D9350DD57 /* [CP] Check Pods Manifest.lock */,
+				7BA210A522F43F5300EB086F /* Sources */,
+				7BA210A622F43F5300EB086F /* Frameworks */,
+				7BA210A722F43F5300EB086F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BA210AB22F43F5300EB086F /* PBXTargetDependency */,
+			);
+			name = LuckyStrikeTests;
+			productName = LuckyStrikeTests;
+			productReference = 7BA210A922F43F5300EB086F /* LuckyStrikeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7BA210B322F43F5300EB086F /* LuckyStrikeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7BA210C322F43F5300EB086F /* Build configuration list for PBXNativeTarget "LuckyStrikeUITests" */;
+			buildPhases = (
+				9F155235CE0A7362CF503A30 /* [CP] Check Pods Manifest.lock */,
+				7BA210B022F43F5300EB086F /* Sources */,
+				7BA210B122F43F5300EB086F /* Frameworks */,
+				7BA210B222F43F5300EB086F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7BA210B622F43F5300EB086F /* PBXTargetDependency */,
+			);
+			name = LuckyStrikeUITests;
+			productName = LuckyStrikeUITests;
+			productReference = 7BA210B422F43F5300EB086F /* LuckyStrikeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7BA2108D22F43F5100EB086F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1020;
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = TreineticMacbook003;
+				TargetAttributes = {
+					7BA2109422F43F5100EB086F = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+					7BA210A822F43F5300EB086F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7BA2109422F43F5100EB086F;
+					};
+					7BA210B322F43F5300EB086F = {
+						CreatedOnToolsVersion = 10.2.1;
+						TestTargetID = 7BA2109422F43F5100EB086F;
+					};
+				};
+			};
+			buildConfigurationList = 7BA2109022F43F5100EB086F /* Build configuration list for PBXProject "LuckyStrike" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 7BA2108C22F43F5100EB086F;
+			productRefGroup = 7BA2109622F43F5100EB086F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7BA2109422F43F5100EB086F /* LuckyStrike */,
+				7BA210A822F43F5300EB086F /* LuckyStrikeTests */,
+				7BA210B322F43F5300EB086F /* LuckyStrikeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7BA2109322F43F5100EB086F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BA210C922F4478D00EB086F /* raleway.ttf in Resources */,
+				7BA210A322F43F5200EB086F /* LaunchScreen.storyboard in Resources */,
+				7BCE2D3F22FAA55D002EBEFC /* strike_button_sound.wav in Resources */,
+				7BEDD1F922F9B34800969070 /* SlotItem.xib in Resources */,
+				7BA210C622F446C800EB086F /* Assets.xcassets in Resources */,
+				7BA210CB22F448BF00EB086F /* ralewaybold.ttf in Resources */,
+				7BA2109E22F43F5100EB086F /* Main.storyboard in Resources */,
+				7BA210CD22F4490C00EB086F /* ralewaysemibold.ttf in Resources */,
+				7BAB166622F8316700D7C8F8 /* ModalTryAgain.xib in Resources */,
+				7BA210D922F47BE300EB086F /* ModalWin.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA210A722F43F5300EB086F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA210B222F43F5300EB086F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7612F9434FBF1E8D9350DD57 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyStrikeTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9F155235CE0A7362CF503A30 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyStrikeUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CB5489EF1F92EF4B51541342 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LuckyStrike-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D1A6F1EAF516F317404924F7 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyStrike/Pods-LuckyStrike-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LuckyStrike/Pods-LuckyStrike-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LuckyStrike/Pods-LuckyStrike-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7BA2109122F43F5100EB086F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BA210DB22F47BF300EB086F /* ModalWin.swift in Sources */,
+				7BAB166822F8344900D7C8F8 /* ModalTryAgain.swift in Sources */,
+				7BCE2D4222FAA5C1002EBEFC /* SlotSound.swift in Sources */,
+				7BEDD1FB22F9B3E300969070 /* SlotItem.swift in Sources */,
+				7BCE2D4422FAB25E002EBEFC /* CardView.swift in Sources */,
+				7BAB166022F7ECFF00D7C8F8 /* Colors.swift in Sources */,
+				7BA2109B22F43F5100EB086F /* ViewController.swift in Sources */,
+				7BA2109922F43F5100EB086F /* AppDelegate.swift in Sources */,
+				7BA210D622F4748B00EB086F /* HowToPlayViewController.swift in Sources */,
+				7BAB166422F81B6A00D7C8F8 /* Gradients.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA210A522F43F5300EB086F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BA210AE22F43F5300EB086F /* LuckyStrikeTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7BA210B022F43F5300EB086F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7BA210B922F43F5300EB086F /* LuckyStrikeUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7BA210AB22F43F5300EB086F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BA2109422F43F5100EB086F /* LuckyStrike */;
+			targetProxy = 7BA210AA22F43F5300EB086F /* PBXContainerItemProxy */;
+		};
+		7BA210B622F43F5300EB086F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 7BA2109422F43F5100EB086F /* LuckyStrike */;
+			targetProxy = 7BA210B522F43F5300EB086F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7BA2109C22F43F5100EB086F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BA2109D22F43F5100EB086F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7BA210A122F43F5200EB086F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7BA210A222F43F5200EB086F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7BA210BB22F43F5300EB086F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7BA210BC22F43F5300EB086F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7BA210BE22F43F5300EB086F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8E3B75E918876FC3458AB82A /* Pods-LuckyStrike.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyStrike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.003.LuckyStrike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7BA210BF22F43F5300EB086F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 66B8CDF1644CA3F92DE9A45F /* Pods-LuckyStrike.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyStrike/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.003.LuckyStrike;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7BA210C122F43F5300EB086F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D5A5ED6B8610C78E285F5AEC /* Pods-LuckyStrikeTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyStrikeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.003.LuckyStrikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyStrike.app/LuckyStrike";
+			};
+			name = Debug;
+		};
+		7BA210C222F43F5300EB086F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8AC0A4717E4CBA0F6313A30A /* Pods-LuckyStrikeTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyStrikeTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.003.LuckyStrikeTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LuckyStrike.app/LuckyStrike";
+			};
+			name = Release;
+		};
+		7BA210C422F43F5300EB086F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E28AB8D4EA707358BC786A97 /* Pods-LuckyStrikeUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyStrikeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.003.LuckyStrikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuckyStrike;
+			};
+			name = Debug;
+		};
+		7BA210C522F43F5300EB086F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D234F659C2E48EFB91C45C19 /* Pods-LuckyStrikeUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LuckyStrikeUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tg.ravens.003.LuckyStrikeUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LuckyStrike;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7BA2109022F43F5100EB086F /* Build configuration list for PBXProject "LuckyStrike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BA210BB22F43F5300EB086F /* Debug */,
+				7BA210BC22F43F5300EB086F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BA210BD22F43F5300EB086F /* Build configuration list for PBXNativeTarget "LuckyStrike" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BA210BE22F43F5300EB086F /* Debug */,
+				7BA210BF22F43F5300EB086F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BA210C022F43F5300EB086F /* Build configuration list for PBXNativeTarget "LuckyStrikeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BA210C122F43F5300EB086F /* Debug */,
+				7BA210C222F43F5300EB086F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7BA210C322F43F5300EB086F /* Build configuration list for PBXNativeTarget "LuckyStrikeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7BA210C422F43F5300EB086F /* Debug */,
+				7BA210C522F43F5300EB086F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7BA2108D22F43F5100EB086F /* Project object */;
+}

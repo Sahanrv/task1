@@ -1,0 +1,417 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="raleway.ttf">
+            <string>Raleway-Regular</string>
+        </array>
+        <array key="ralewaysemibold.ttf">
+            <string>Raleway-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="LuckyStrike" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TxR-Hj-e4T">
+                                <rect key="frame" x="0.0" y="44" width="414" height="110"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="POINTS AVAILABLE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ciz-6M-RJa">
+                                        <rect key="frame" x="97.666666666666671" y="62.333333333333336" width="218.66666666666663" height="28.333333333333336"/>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="24"/>
+                                        <color key="textColor" name="accent"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="38"/>
+                                        </variation>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1000" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eyH-ea-Xwg">
+                                        <rect key="frame" x="153.66666666666666" y="8.0000000000000036" width="106.66666666666666" height="54.333333333333343"/>
+                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="46"/>
+                                        <color key="textColor" name="secondary"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="72"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="primary"/>
+                                <constraints>
+                                    <constraint firstItem="Ciz-6M-RJa" firstAttribute="top" secondItem="eyH-ea-Xwg" secondAttribute="bottom" id="4p0-1N-mli"/>
+                                    <constraint firstItem="eyH-ea-Xwg" firstAttribute="top" secondItem="TxR-Hj-e4T" secondAttribute="top" constant="8" id="5fK-VP-Z3k"/>
+                                    <constraint firstAttribute="height" constant="110" id="N7w-y4-MBa">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="160"/>
+                                    </constraint>
+                                    <constraint firstItem="eyH-ea-Xwg" firstAttribute="centerX" secondItem="TxR-Hj-e4T" secondAttribute="centerX" id="XzO-ys-BCo"/>
+                                    <constraint firstItem="Ciz-6M-RJa" firstAttribute="centerX" secondItem="TxR-Hj-e4T" secondAttribute="centerX" id="ny5-m2-9RZ"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="syu-lS-iSd" customClass="CardView" customModule="LuckyStrike" customModuleProvider="target">
+                                <rect key="frame" x="8" y="154" width="398" height="446"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="wBS-Bd-y82">
+                                        <rect key="frame" x="8" y="8" width="382" height="430"/>
+                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="wBS-Bd-y82" firstAttribute="top" secondItem="syu-lS-iSd" secondAttribute="top" constant="8" id="1Mq-Jk-Adg"/>
+                                    <constraint firstAttribute="bottom" secondItem="wBS-Bd-y82" secondAttribute="bottom" constant="8" id="3Sm-HW-bRR"/>
+                                    <constraint firstItem="wBS-Bd-y82" firstAttribute="centerX" secondItem="syu-lS-iSd" secondAttribute="centerX" id="7Nw-bw-L0h"/>
+                                    <constraint firstItem="wBS-Bd-y82" firstAttribute="leading" secondItem="syu-lS-iSd" secondAttribute="leading" constant="8" id="ESB-rS-E0I"/>
+                                    <constraint firstAttribute="trailing" secondItem="wBS-Bd-y82" secondAttribute="trailing" constant="8" id="aR5-KQ-BSa"/>
+                                    <constraint firstItem="wBS-Bd-y82" firstAttribute="centerY" secondItem="syu-lS-iSd" secondAttribute="centerY" id="kN0-qd-H8x"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kpC-gb-219">
+                                <rect key="frame" x="0.0" y="616" width="414" height="246"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="4Yz-wq-6RK">
+                                        <rect key="frame" x="79" y="62" width="256" height="42"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fcq-m9-W7E">
+                                                <rect key="frame" x="0.0" y="0.0" width="42" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="42" id="8I3-6x-F89">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="height" constant="42" id="pq9-86-EKJ">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <state key="normal" image="down-arrow"/>
+                                                <connections>
+                                                    <action selector="didClickDecreaseBet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UF9-gi-UME"/>
+                                                </connections>
+                                            </button>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BBk-F4-wax" customClass="CardView" customModule="LuckyStrike" customModuleProvider="target">
+                                                <rect key="frame" x="50" y="0.0" width="156" height="42"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VRw-t4-Rmj">
+                                                        <rect key="frame" x="44.666666666666657" y="6.6666666666666288" width="67" height="29"/>
+                                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="28"/>
+                                                        <color key="textColor" name="primary"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="50"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="bottom" secondItem="VRw-t4-Rmj" secondAttribute="bottom" constant="6.5" id="2rc-yp-H0Z"/>
+                                                    <constraint firstItem="VRw-t4-Rmj" firstAttribute="leading" secondItem="BBk-F4-wax" secondAttribute="leading" constant="44.5" id="48t-HO-GKf"/>
+                                                    <constraint firstItem="VRw-t4-Rmj" firstAttribute="top" secondItem="BBk-F4-wax" secondAttribute="top" constant="6.5" id="RdR-uq-4mv"/>
+                                                    <constraint firstAttribute="trailing" secondItem="VRw-t4-Rmj" secondAttribute="trailing" constant="44.5" id="S5S-nn-hwV"/>
+                                                    <constraint firstItem="VRw-t4-Rmj" firstAttribute="centerX" secondItem="BBk-F4-wax" secondAttribute="centerX" id="lrF-Sx-Nqz"/>
+                                                    <constraint firstItem="VRw-t4-Rmj" firstAttribute="centerY" secondItem="BBk-F4-wax" secondAttribute="centerY" id="oY4-ZX-gh8"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                        <integer key="value" value="10"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tX9-bz-G44">
+                                                <rect key="frame" x="214" y="0.0" width="42" height="42"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="42" id="Lgg-8D-USI">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                    </constraint>
+                                                    <constraint firstAttribute="width" constant="42" id="Nfz-Ki-MYe">
+                                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                                    </constraint>
+                                                </constraints>
+                                                <state key="normal" image="up-arrow"/>
+                                                <connections>
+                                                    <action selector="didClickIncreaseBet:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Z0L-QU-u6f"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hta-zS-sWj">
+                                        <rect key="frame" x="366" y="206" width="40" height="40"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="40" id="IoR-8P-rZ9">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                            </constraint>
+                                            <constraint firstAttribute="height" constant="40" id="n0i-eH-GZE">
+                                                <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                            </constraint>
+                                        </constraints>
+                                        <state key="normal" image="question_filled"/>
+                                        <connections>
+                                            <action selector="didClickHowToPlay:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F99-dz-esV"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Cj-oS-ElQ">
+                                        <rect key="frame" x="129.66666666666666" y="127" width="154.99999999999997" height="88"/>
+                                        <color key="backgroundColor" name="primary"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="88" id="n0i-OG-PTK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="28"/>
+                                        <inset key="contentEdgeInsets" minX="30" minY="60" maxX="30" maxY="60"/>
+                                        <state key="normal" title="STRIKE">
+                                            <color key="titleColor" name="secondary"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.CornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <variation key="heightClass=regular-widthClass=regular">
+                                            <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="34"/>
+                                        </variation>
+                                        <connections>
+                                            <action selector="didClickStrike:" destination="BYZ-38-t0r" eventType="touchUpInside" id="XfG-pt-7Xm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="3Cj-oS-ElQ" firstAttribute="top" secondItem="4Yz-wq-6RK" secondAttribute="bottom" constant="23" id="4AM-VE-A9e"/>
+                                    <constraint firstAttribute="height" constant="246" id="9JU-2T-9Ye"/>
+                                    <constraint firstItem="3Cj-oS-ElQ" firstAttribute="centerX" secondItem="kpC-gb-219" secondAttribute="centerX" id="CfG-Vy-m9G"/>
+                                    <constraint firstItem="4Yz-wq-6RK" firstAttribute="centerX" secondItem="kpC-gb-219" secondAttribute="centerX" id="PBb-6F-0Fj"/>
+                                    <constraint firstItem="3Cj-oS-ElQ" firstAttribute="centerX" secondItem="kpC-gb-219" secondAttribute="centerX" id="bbd-nT-cFk"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Cj-oS-ElQ" secondAttribute="bottom" constant="31" id="f8m-nR-jXG"/>
+                                    <constraint firstAttribute="trailing" secondItem="hta-zS-sWj" secondAttribute="trailing" constant="8" id="mLL-Zg-woU"/>
+                                    <constraint firstAttribute="bottom" secondItem="hta-zS-sWj" secondAttribute="bottom" id="tN6-uZ-qYA"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="syu-lS-iSd" secondAttribute="trailing" constant="8" id="AoC-gO-Z3Q"/>
+                            <constraint firstItem="syu-lS-iSd" firstAttribute="top" secondItem="TxR-Hj-e4T" secondAttribute="bottom" id="OED-iW-Q4I"/>
+                            <constraint firstItem="kpC-gb-219" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="P6b-KK-rYZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="TxR-Hj-e4T" secondAttribute="trailing" id="QfO-TW-j9s"/>
+                            <constraint firstItem="kpC-gb-219" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="URf-4z-rRi"/>
+                            <constraint firstItem="TxR-Hj-e4T" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="cUP-3g-hMf"/>
+                            <constraint firstItem="kpC-gb-219" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ovb-Su-XM6"/>
+                            <constraint firstItem="kpC-gb-219" firstAttribute="top" secondItem="syu-lS-iSd" secondAttribute="bottom" constant="16" id="pWw-3X-jW7"/>
+                            <constraint firstItem="syu-lS-iSd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="8" id="uRH-lk-5fq"/>
+                            <constraint firstItem="TxR-Hj-e4T" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ykf-ee-1Eh"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="betBackground" destination="BBk-F4-wax" id="42L-Hj-JQJ"/>
+                        <outlet property="btnStrike" destination="3Cj-oS-ElQ" id="ujf-Ii-fDQ"/>
+                        <outlet property="slotBackground" destination="syu-lS-iSd" id="5kN-hg-9rS"/>
+                        <outlet property="stackView" destination="wBS-Bd-y82" id="VqP-8o-Mpt"/>
+                        <outlet property="textBetAmount" destination="VRw-t4-Rmj" id="LKv-BY-UMN"/>
+                        <outlet property="textPoints" destination="eyH-ea-Xwg" id="XJs-o7-Fdl"/>
+                        <segue destination="j9x-ju-TCU" kind="show" identifier="howtoplay" id="lAr-RC-fUo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="57.971014492753625" y="20.758928571428569"/>
+        </scene>
+        <!--How To Play View Controller-->
+        <scene sceneID="xOs-VH-X0d">
+            <objects>
+                <viewController id="j9x-ju-TCU" customClass="HowToPlayViewController" customModule="LuckyStrike" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="BG8-rW-scV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1000"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="HOW TO PLAY" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feJ-jr-58h">
+                                <rect key="frame" x="126" y="80" width="162" height="28.333333333333329"/>
+                                <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="24"/>
+                                <color key="textColor" name="secondary"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="38"/>
+                                </variation>
+                            </label>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BRn-oJ-WWq">
+                                <rect key="frame" x="0.0" y="137" width="414" height="863"/>
+                                <subviews>
+                                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="Wus-5r-7iA">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="880"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="top" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Dev-p7-NQj">
+                                                <rect key="frame" x="18" y="0.0" width="378.33333333333331" height="511"/>
+                                                <subviews>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player has 1000 points at the beginning." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SNJ-cr-ful">
+                                                        <rect key="frame" x="0.0" y="0.0" width="357" height="22.333333333333332"/>
+                                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="19"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="32"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Player can increase the bet size." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cpi-ka-72u">
+                                                        <rect key="frame" x="0.0" y="66.666666666666657" width="286.33333333333331" height="22.333333333333329"/>
+                                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="19"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="32"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Minimum bet is 10 points." lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pt2-pM-lgL">
+                                                        <rect key="frame" x="0.0" y="133" width="227.33333333333334" height="22.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="19"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="32"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Bet can be increased up to the point limit. " lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="L0B-pS-Qku">
+                                                        <rect key="frame" x="0.0" y="199.66666666666669" width="378.33333333333331" height="22.333333333333343"/>
+                                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="19"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="32"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pnA-Yr-gvZ">
+                                                        <rect key="frame" x="0.0" y="266.33333333333331" width="362.66666666666669" height="44.666666666666686"/>
+                                                        <string key="text">If all the $ signs get matched diagonally,
+player will get double the bet amount.</string>
+                                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="19"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="32"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ReY-R4-tna">
+                                                        <rect key="frame" x="0.0" y="355" width="353.66666666666669" height="67"/>
+                                                        <string key="text">If $ signs get matched in both diagonal 
+ways player will get quadruple the bet 
+amount.</string>
+                                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="19"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="32"/>
+                                                        </variation>
+                                                    </label>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dSS-cv-2D8">
+                                                        <rect key="frame" x="0.0" y="466.33333333333337" width="366" height="44.666666666666686"/>
+                                                        <string key="text">Player will lose the bet amount if $ signs 
+get  diagonally unmatched. </string>
+                                                        <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="19"/>
+                                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                        <nil key="highlightedColor"/>
+                                                        <variation key="heightClass=regular-widthClass=regular">
+                                                            <fontDescription key="fontDescription" name="Raleway-SemiBold" family="Raleway" pointSize="32"/>
+                                                        </variation>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yxu-e2-cJh">
+                                                <rect key="frame" x="183" y="606" width="48" height="48"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="48" id="0Is-ve-Ogc"/>
+                                                    <constraint firstAttribute="width" constant="48" id="ON9-au-unY"/>
+                                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="48" id="SF6-dM-vIo"/>
+                                                    <constraint firstAttribute="height" constant="48" id="lB9-8f-vHN"/>
+                                                </constraints>
+                                                <state key="normal" image="back"/>
+                                                <connections>
+                                                    <action selector="didClickBack:" destination="j9x-ju-TCU" eventType="touchUpInside" id="Nhs-bh-T1r"/>
+                                                    <action selector="didClickBack:" destination="c64-Z2-7yB" eventType="touchUpInside" id="P7N-it-bDv"/>
+                                                </connections>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="V1.0" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1K5-rP-1NG">
+                                                <rect key="frame" x="180.66666666666666" y="688" width="53" height="33"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="33" id="fzb-M6-riB"/>
+                                                    <constraint firstAttribute="width" constant="53" id="jCE-1r-7OB"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="Raleway-Regular" family="Raleway" pointSize="28"/>
+                                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="bottom" secondItem="1K5-rP-1NG" secondAttribute="bottom" constant="159" id="F7N-pi-e1o"/>
+                                            <constraint firstItem="yxu-e2-cJh" firstAttribute="top" secondItem="Dev-p7-NQj" secondAttribute="bottom" constant="95" id="YMr-A0-JTn"/>
+                                            <constraint firstItem="1K5-rP-1NG" firstAttribute="top" secondItem="yxu-e2-cJh" secondAttribute="bottom" constant="34" id="Z1X-sN-YWR"/>
+                                            <constraint firstAttribute="height" constant="880" id="bEb-0q-jj7"/>
+                                            <constraint firstItem="yxu-e2-cJh" firstAttribute="centerX" secondItem="Wus-5r-7iA" secondAttribute="centerX" id="cF1-Uz-BZV"/>
+                                            <constraint firstItem="Dev-p7-NQj" firstAttribute="top" secondItem="Wus-5r-7iA" secondAttribute="top" id="j1L-26-oZG"/>
+                                            <constraint firstItem="Dev-p7-NQj" firstAttribute="centerX" secondItem="Wus-5r-7iA" secondAttribute="centerX" id="lNl-tN-r3p"/>
+                                            <constraint firstItem="1K5-rP-1NG" firstAttribute="centerX" secondItem="Wus-5r-7iA" secondAttribute="centerX" id="u3x-ct-EJA"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="Wus-5r-7iA" firstAttribute="leading" secondItem="BRn-oJ-WWq" secondAttribute="leading" id="JZ0-wG-QTb"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wus-5r-7iA" secondAttribute="bottom" constant="-17" id="QNY-65-2Lo"/>
+                                    <constraint firstItem="Wus-5r-7iA" firstAttribute="width" secondItem="BRn-oJ-WWq" secondAttribute="width" id="UqH-TJ-ag4"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wus-5r-7iA" secondAttribute="trailing" id="ZPG-kG-fet"/>
+                                    <constraint firstItem="Wus-5r-7iA" firstAttribute="top" secondItem="BRn-oJ-WWq" secondAttribute="top" id="rwV-Df-7wY"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" name="primary"/>
+                        <constraints>
+                            <constraint firstItem="BRn-oJ-WWq" firstAttribute="trailing" secondItem="axa-8O-PgJ" secondAttribute="trailing" id="4eC-M9-iXG"/>
+                            <constraint firstAttribute="bottom" secondItem="BRn-oJ-WWq" secondAttribute="bottom" id="9o5-rn-S7o"/>
+                            <constraint firstItem="BRn-oJ-WWq" firstAttribute="top" secondItem="BG8-rW-scV" secondAttribute="top" constant="137" id="InG-Ot-Ajm"/>
+                            <constraint firstItem="axa-8O-PgJ" firstAttribute="trailing" secondItem="BRn-oJ-WWq" secondAttribute="trailing" id="JGR-bN-rvt"/>
+                            <constraint firstItem="feJ-jr-58h" firstAttribute="top" secondItem="axa-8O-PgJ" secondAttribute="top" constant="36" id="aeX-hB-WR6"/>
+                            <constraint firstItem="feJ-jr-58h" firstAttribute="centerX" secondItem="axa-8O-PgJ" secondAttribute="centerX" id="ivC-gu-eRd"/>
+                            <constraint firstItem="BRn-oJ-WWq" firstAttribute="leading" secondItem="axa-8O-PgJ" secondAttribute="leading" id="tlU-Nm-zR4"/>
+                            <constraint firstItem="BRn-oJ-WWq" firstAttribute="leading" secondItem="axa-8O-PgJ" secondAttribute="leading" id="zeU-Qm-Ajy"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="axa-8O-PgJ"/>
+                    </view>
+                    <size key="freeformSize" width="414" height="1000"/>
+                    <connections>
+                        <outlet property="textAppVersion" destination="1K5-rP-1NG" id="UiM-6m-IBk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dqc-fS-Aol" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="c64-Z2-7yB" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="794.20289855072474" y="121.875"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back" width="100" height="100"/>
+        <image name="down-arrow" width="73" height="73"/>
+        <image name="question_filled" width="100" height="100"/>
+        <image name="up-arrow" width="73" height="73"/>
+        <namedColor name="accent">
+            <color red="0.96470588235294119" green="0.85882352941176465" blue="0.43529411764705883" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="primary">
+            <color red="0.17254901960784313" green="0.24313725490196078" blue="0.31372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="secondary">
+            <color red="0.94509803921568625" green="0.7686274509803922" blue="0.058823529411764705" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
