@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="zorque.ttf">
+            <string>Zorque-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BotPlayerView" customModule="PlaygroundSlot" customModuleProvider="target">
+            <connections>
+                <outlet property="playerImage" destination="fhG-Ss-pWI" id="P9N-zh-A6p"/>
+                <outlet property="playerItem" destination="kUS-l1-eB3" id="MiL-xT-QMV"/>
+                <outlet property="playerName" destination="4o3-2r-4pp" id="uAy-JU-p1k"/>
+                <outlet property="playerPoints" destination="FSh-kv-xuB" id="pOf-ID-0st"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="100"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="player_bg" translatesAutoresizingMaskIntoConstraints="NO" id="vQQ-Ir-WSN">
+                    <rect key="frame" x="0.0" y="0.0" width="70" height="100"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="RFx-9N-EHd">
+                    <rect key="frame" x="10" y="4" width="50.5" height="12"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="deselected_ball" translatesAutoresizingMaskIntoConstraints="NO" id="kUS-l1-eB3">
+                            <rect key="frame" x="0.0" y="0.0" width="12" height="12"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="12" id="7oD-TF-VEe"/>
+                                <constraint firstAttribute="width" constant="12" id="8SS-JI-f93"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="John" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4o3-2r-4pp">
+                            <rect key="frame" x="17" y="0.0" width="33.5" height="12"/>
+                            <fontDescription key="fontDescription" name="Zorque-Regular" family="Zorque" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bot4" translatesAutoresizingMaskIntoConstraints="NO" id="fhG-Ss-pWI">
+                    <rect key="frame" x="13.5" y="17.5" width="43" height="65"/>
+                </imageView>
+                <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="Olk-HP-6ex">
+                    <rect key="frame" x="9.5" y="81.5" width="51" height="14.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="550" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FSh-kv-xuB">
+                            <rect key="frame" x="0.0" y="0.0" width="25" height="14.5"/>
+                            <fontDescription key="fontDescription" name="Zorque-Regular" family="Zorque" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PTS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Epg-cQ-uhT">
+                            <rect key="frame" x="30" y="0.0" width="21" height="14.5"/>
+                            <fontDescription key="fontDescription" name="Zorque-Regular" family="Zorque" pointSize="12"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="fhG-Ss-pWI" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="67R-lx-gwf"/>
+                <constraint firstItem="fhG-Ss-pWI" firstAttribute="top" secondItem="RFx-9N-EHd" secondAttribute="bottom" constant="1.5" id="Ffu-5k-pYP"/>
+                <constraint firstItem="vQQ-Ir-WSN" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="Jcy-6V-v0w"/>
+                <constraint firstAttribute="bottom" secondItem="Olk-HP-6ex" secondAttribute="bottom" constant="4" id="Lnc-gS-wo5"/>
+                <constraint firstAttribute="trailing" secondItem="vQQ-Ir-WSN" secondAttribute="trailing" id="Qub-3Z-td4"/>
+                <constraint firstItem="vQQ-Ir-WSN" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="SyO-V7-p0X"/>
+                <constraint firstItem="Olk-HP-6ex" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="Wri-xJ-h3d"/>
+                <constraint firstAttribute="bottom" secondItem="vQQ-Ir-WSN" secondAttribute="bottom" id="XTy-mW-Jfo"/>
+                <constraint firstItem="RFx-9N-EHd" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="gZ1-9c-0wt"/>
+                <constraint firstItem="fhG-Ss-pWI" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="ru5-sE-Srf"/>
+                <constraint firstItem="RFx-9N-EHd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="4" id="uO3-6W-D2T"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-85.507246376811594" y="-164.0625"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bot4" width="43" height="57.5"/>
+        <image name="deselected_ball" width="20" height="20"/>
+        <image name="player_bg" width="72" height="97.5"/>
+    </resources>
+</document>
