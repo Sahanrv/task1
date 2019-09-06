@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TodoAppRx" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="wRf-CF-pVd">
+                                <rect key="frame" x="40" y="258" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="GP6-gB-gqa"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OB9-hT-f6j">
+                                <rect key="frame" x="40" y="308" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5z7-V4-Oez"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="38Z-S5-97I">
+                                <rect key="frame" x="40" y="358" width="334" height="40"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jVJ-S8-4AL"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Enabled" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MsP-hn-aGS">
+                                <rect key="frame" x="40" y="408" width="334" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="ODt-qB-GQZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="OB9-hT-f6j" firstAttribute="leading" secondItem="38Z-S5-97I" secondAttribute="leading" id="1Om-aV-plx"/>
+                            <constraint firstItem="OB9-hT-f6j" firstAttribute="leading" secondItem="wRf-CF-pVd" secondAttribute="leading" id="5PI-OH-9qS"/>
+                            <constraint firstItem="MsP-hn-aGS" firstAttribute="leading" secondItem="38Z-S5-97I" secondAttribute="leading" id="8XU-hp-nWG"/>
+                            <constraint firstItem="MsP-hn-aGS" firstAttribute="trailing" secondItem="38Z-S5-97I" secondAttribute="trailing" id="A43-gF-ILb"/>
+                            <constraint firstItem="MsP-hn-aGS" firstAttribute="top" secondItem="38Z-S5-97I" secondAttribute="bottom" constant="10" id="Hhv-lY-Tty"/>
+                            <constraint firstItem="OB9-hT-f6j" firstAttribute="trailing" secondItem="38Z-S5-97I" secondAttribute="trailing" id="WPN-3c-iwA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="38Z-S5-97I" secondAttribute="trailing" constant="40" id="eGj-JA-KQQ"/>
+                            <constraint firstItem="38Z-S5-97I" firstAttribute="top" secondItem="OB9-hT-f6j" secondAttribute="bottom" constant="10" id="if0-V4-0Cc"/>
+                            <constraint firstItem="OB9-hT-f6j" firstAttribute="top" secondItem="wRf-CF-pVd" secondAttribute="bottom" constant="10" id="kHU-bB-Mv5"/>
+                            <constraint firstItem="38Z-S5-97I" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="o9k-JY-qdZ"/>
+                            <constraint firstItem="wRf-CF-pVd" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="214" id="oJ9-N3-tgp"/>
+                            <constraint firstItem="OB9-hT-f6j" firstAttribute="trailing" secondItem="wRf-CF-pVd" secondAttribute="trailing" id="wPv-71-oIx"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="enailtxt" destination="wRf-CF-pVd" id="pHO-3I-J8p"/>
+                        <outlet property="loginStatuslb" destination="MsP-hn-aGS" id="OUg-Ka-Iyo"/>
+                        <outlet property="loginbtn" destination="38Z-S5-97I" id="RaT-t2-wsh"/>
+                        <outlet property="passwordtxt" destination="OB9-hT-f6j" id="M8K-kZ-Kov"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
